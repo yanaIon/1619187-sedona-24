@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Яна Ионова](https://up.htmlacademy.ru/adaptive/24/user/1619187).
-* Наставник: `Анна Лисененкова`.
+* Наставник: `Анна Лисененкова`(https://htmlacademy.ru/profile/ankhena).
 
 ---
 
