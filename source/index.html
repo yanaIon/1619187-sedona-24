@@ -10,7 +10,7 @@
         <img src="img/logo.svg" width="102" height="84" alt="Седона">
       </a>
       <nav class="nav">
-        <button class="nav__toggle" ctype="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item nav__item--active">
@@ -40,9 +40,10 @@
     <main class="page__main">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="intro">
-        <div class="intro__wrapper">
-          <img class ="intro__image" src="img/intro.svg" width="460" height="350" alt="Седона">
-        </div>
+        <h2 class="visually-hidden">Небольшой городок Седона</h2>
+          <div class="intro__wrapper">
+            <img class ="intro__image" src="img/intro.svg" width="460" height="350" alt="Седона">
+          </div>
       </section>
       <section class="promo">
         <div class="promo__wrapper">
@@ -53,11 +54,12 @@
         </div>
       </section>
       <section class="reasons">
-          <div class="reason">
+        <ul class="reasons__list">
+          <li class="reason__item">
             <div class="reason__header">
               <h3 class="reason__title">Настоящий городок</h3>
-              <div class="decorated-number">№1</div>
-              <div class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</div>
+              <p class="decorated-number">№1</p>
+              <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reason__image">
               <img src="img/photo-city.jpg" alt="Фото города">
@@ -69,8 +71,8 @@
                     <img src="img/icon/icon-house.svg" alt="Дом">
                   </div>
                   <div class="info__item-content">
-                  <div class="info__item-title">Жилье</div>
-                  <div class="info__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+                  <p class="info__item-title">Жилье</p>
+                  <p class="info__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </div>
                 </li>
                 <li class="info__item">
@@ -78,8 +80,8 @@
                     <img src="img/icon/icon-gift.svg" alt="Сувениры">
                   </div>
                   <div class="info__item-content">
-                  <div class="info__item-title">Сувениры</div>
-                  <div class="info__item-description">Не только китайского, но и местного производства!</div>
+                  <p class="info__item-title">Сувениры</p>
+                  <p class="info__item-description">Не только китайского, но и местного производства!</p>
                   </div>
                 </li>
                 <li class="info__item">
@@ -87,52 +89,54 @@
                     <img src="img/icon/icon-burger.svg" alt="Еда">
                   </div>
                   <div class="info__item-content">
-                  <div class="info__item-title">Еда</div>
-                  <div class="info__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</div>
+                  <p class="info__item-title">Еда</p>
+                  <p class="info__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </div>
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="reason">
+          </li>
+          <li class="reason__item">
             <div class="reason__header">
               <h3 class="reason__title">Там есть мост дьявола</h3>
-              <div class="decorated-number">№2</div>
-              <div class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
+              <p class="decorated-number">№2</p>
+              <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="reason__image">
-              <img src="img/photo-bridge.jpg">
+              <img src="img/photo-bridge.jpg" alt="Мост дьявола">
             </div>
-          </div>
-          <div class="reason">
+          </li>
+          <li class="reason__item">
             <div class="reason__header">
               <h3 class="reason__title">Небольшая площадь</h3>
-              <div class="decorated-number">№3</div>
-              <div class="reason__description">Все интересные места находятся очень близко</div>
+              <p class="decorated-number">№3</p>
+              <p class="reason__description">Все интересные места находятся очень близко</p>
             </div>
-          </div>
-          <div class="reason">
+          </li>
+          <li class="reason__item">
             <div class="reason__header">
               <h3 class="reason__title">Красивая дорога</h3>
-              <div class="decorated-number">№4</div>
-              <div class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
+              <p class="decorated-number">№4</p>
+              <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
-          </div>
-          <div class="reason">
+          </li>
+          <li class="reason__item">
             <div class="reason__header">
               <h3 class="reason__title">Мало туристов</h3>
-              <div class="decorated-number">№5</div>
-              <div class="reason__description">Большинство едет в Гранд Каньон и толпится там</div>
+              <p class="decorated-number">№5</p>
+              <p class="reason__description">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
-          </div>
+          </li>
+        </ul>
       </section>
       <section class="search">
         <h3 class="search__title">Заинтересовались?</h3>
-        <div class="search__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Cедоне</div>
-        <button class="button" type="button">Найти гостиницу</button>
+        <p class="search__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <a class="button" href="#">Найти гостиницу</a>
       </section>
       <section class="map">
-        <img src="img/map-mobile.jpg" alt="Карта">
+        <h2 class="visually-hidden">Карта</h2>
+          <img src="img/map-mobile.jpg" alt="Карта">
       </section>
     </main>
     <footer class="page-footer">
