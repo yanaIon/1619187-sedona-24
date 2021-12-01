@@ -2,12 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo.svg" width="102" height="60" alt="Седона">
+        <img src="img/logo.svg" width="102" height="84" alt="Седона">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -118,12 +121,16 @@
       <div class="error">
         <h2 class="error__title">Что-то пошло не так!</h2>
         <p class="error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="button" type="submit">Ок</button>
+        <button class="button button--error" type="submit">Ок</button>
       </div>
       <div class="result">
-        <h2 class="result__title">Ваш отзыв отправлен!</h2>
-        <p class="result__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="button" type="submit">Закрыть</button>
+        <div class="result__desc">
+          <h2 class="result__title">Ваш отзыв отправлен!</h2>
+          <p class="result__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="button__wrapper">
+          <button class="button" type="submit">Закрыть окно</button>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
@@ -144,7 +151,7 @@
         </div>
         <div class="page-footer__copyright">
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <p class="copyright__text">Разработано:</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>

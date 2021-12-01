@@ -2,12 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo.svg" width="102" height="60" alt="Седона">
+        <img src="img/logo.svg" width="102" height="84" alt="Седона">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -45,7 +48,7 @@
             <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
           </div>
       </section>
-      <section class="promo">
+      <section class="promo promo--catalog">
         <div class="promo__wrapper">
           <h2 class="promo__title">
             Фото и видео
@@ -77,9 +80,7 @@
             <cite class="article-content__autor" >Автор фото: Сергей</cite>
           </figcaption>
           </figure>
-          <div class="article-stats">
-            <button class="like" type="button"><span class="like-number"></span></button>
-          </div>
+          <button class="like" type="button"></button>
         </article>
         <article class="article">
           <figure class="article__content article-content">
@@ -91,9 +92,7 @@
             <cite class="article-content__autor" >Автор фото: Петр</cite>
           </figcaption>
           </figure>
-          <div class="article-stats">
-            <button class="like" type="button"><span class="like-number"></span></button>
-          </div>
+          <button class="like" type="button"></button>
         </article>
         <article class="article">
           <figure class="article__content article-content">
@@ -105,9 +104,7 @@
             <cite class="article-content__autor" >Автор фото: Антон</cite>
           </figcaption>
           </figure>
-          <div class="article-stats">
-            <button class="like" type="button"><span class="like-number"></span></button>
-          </div>
+          <button class="like" type="button"></button>
         </article>
       </section>
       <section class="promo">
@@ -139,7 +136,7 @@
         </div>
         <div class="page-footer__copyright">
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <p class="copyright__text">Разработано:</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>

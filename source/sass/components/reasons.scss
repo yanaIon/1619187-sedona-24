@@ -1,0 +1,27 @@
+.reasons__header {
+  padding: 55px 20px 39px 18px;
+  text-align: center;
+}
+
+.reasons__header--color-blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.reasons__header--color-gray {
+  background-color: #eeeeee;
+  border-bottom: #d6d6d6 1px solid;
+}
+
+.reasons__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reasons__number::before {
+  content: "-";
+}
+
+.reasons__number::after {
+  content: "-";
+}

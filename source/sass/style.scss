@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+// global
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/reset.scss";
+
+//components
+
+@import "components/nav.scss";
+@import "components/intro.scss";
+@import "components/promo.scss";
+@import "components/reasons.scss";
+@import "components/info.scss";
+@import "components/search.scss";
+@import "components/button.scss";
+@import "components/footer.scss";
+@import "components/form.scss";
+@import "components/article.scss";
+@import "components/error.scss";
+@import "components/result.scss";
