@@ -1,6 +1,6 @@
-.intro__wrapper {
-  background-color: #81b3d2;
-  background-image: url("../../img/back.jpg");
+.intro {
+  background-color: $main-bg-color;
+  background-image: url("../img/back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -10,3 +10,4 @@
 .intro__image {
   width: 100%;
 }
+

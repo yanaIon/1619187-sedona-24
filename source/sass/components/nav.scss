@@ -1,11 +1,11 @@
 .nav {
   font-size: 18px;
   font-weight: bold;
-  background-color: #81b3d2;
+  background-color: $main-bg-color;
 }
 
 .nav__link {
-  color: #ffffff;
+  color: $another-text-color;
   text-decoration: none;
   line-height: 40px;
 }

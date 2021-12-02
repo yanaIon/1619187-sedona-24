@@ -1,22 +1,27 @@
 .form__header {
   text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .form__label {
   display: flex;
+  font-size: 14px;
 }
 
 .form__input {
   flex-grow: 1;
+  width: 100%;
+  font-size: 18px;
   height: 58px;
   padding-left: 22px;
-  color: #000000;
+  color: $form-text-color;
   font-weight: bold;
-  background-color: #f2f2f2;
+  background-color: $form-bg-color;
   border: transparent;
 
   &:hover {
-    background-color: #e5e5e5;
+    background-color: $form-bg-hover-color;
   }
 }
 
@@ -25,6 +30,11 @@
   margin: 20px 20px 25px 20px;
   display: grid;
   gap: 20px;
+  justify-items: stretch;
+}
+
+.form__introduce .form__label {
+  align-items: center;
 }
 
 .form__introduce input {
@@ -32,57 +42,59 @@
 }
 
 //contacts
-.contacts {
+.form__contacts {
   margin: 20px 20px 25px 20px;
   display: grid;
-  gap: 10px;
+  gap: 15px;
 }
 
-.contacts label {
+.form__contacts .form__input {
+  margin-top: 8px;
+}
+
+.form__contacts label {
   margin-left: 0;
   flex-direction: column;
   text-align: start;
 }
 
 //impression
-.impression {
+.form__impression {
   display: grid;
   gap: 43px;
   margin: 20px 12px 31px 24px;
 }
 
-.impression label {
+.form__impression label {
   text-transform: none;
   font-weight: bold;
   font-size: 18px;
 }
 
 //sight-visited
-.sights-visited {
-  margin-top: 15px;
-  margin-left: 24px;
-  margin-bottom: 30px;
+.form__sights-visited {
+  margin: 15px 25px 30px 24px;
   display: grid;
   gap: 24px;
 }
 
-.sights-visited label {
+.form__sights-visited label {
   text-transform: none;
   font-weight: bold;
   font-size: 18px;
 }
 
 //emotions
-.emotions {
+.form__emotions {
   margin: 20px 22px 51px 19px;
 }
 
-.emotions__comment {
+.form__emotions-comment {
   width: 100%;
-  margin-top: 15px;
-  color: #000000;
+  color: $form-text-color;
   font-size: 18px;
   font-weight: bold;
-  background-color: #f2f2f2;
+  padding: 13px 23px 29px 21px;
+  background-color: $form-bg-color;
   border: transparent;
 }

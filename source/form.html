@@ -44,9 +44,7 @@
       <h1 class="visually-hidden">Отзывы</h1>
       <section class="intro">
         <h2 class="visually-hidden">Небольшой городок Седона</h2>
-          <div class="intro__wrapper">
-            <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
-          </div>
+          <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
       </section>
       <section class="promo">
         <div class="promo__wrapper">
@@ -69,7 +67,7 @@
               Отчество:<input class="form__input" type="text" name="patronymic" placeholder="Александрович">
             </label>
         </section>
-        <section class="contacts">
+        <section class="form__contacts">
           <h3 class="form__header">Контактная информация:</h3>
             <label class="form__label">
               Контактный телефон:<input class="form__input" type="tel" name="tel" placeholder="Введите телефон" required>
@@ -78,7 +76,7 @@
               Электронная почта:<input class="form__input" type="email" name="email"  placeholder="Введите e-mail" required>
             </label>
         </section>
-        <section class="impression">
+        <section class="form__impression">
           <h3 class="form__header">Ваше общее впечатление:</h3>
             <label class="radio">
               <input class="radio__input" type="radio" name="impression" value="positive">
@@ -93,7 +91,7 @@
               Затрудняюсь ответить
             </label>
         </section>
-        <section class="sights-visited">
+        <section class="form__sights-visited">
           <h3 class="form__header">посещенные достопримечательности:</h3>
             <label class= "check">
               <input class= "check__input" type="checkbox">
@@ -112,9 +110,9 @@
               Красные скалы
             </label>
         </section>
-        <section class="emotions">
+        <section class="form__emotions">
           <h3 class="form__header">опишите свои эмоции:</h3>
-          <textarea class="emotions__comment" name="comment" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__emotions-comment" name="comment" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
         </section>
         <button class="button" type="submit">Отправить отзыв</button>
       </form>
@@ -129,7 +127,7 @@
           <p class="result__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="result__button-wrapper">
-          <button class="button" type="submit">Закрыть окно</button>
+          <button class="button button--result" type="submit">Закрыть окно</button>
         </div>
       </div>
     </main>

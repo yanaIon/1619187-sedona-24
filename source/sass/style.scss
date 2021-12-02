@@ -1,10 +1,13 @@
 // global
 @import "global/fonts.scss";
-@import "global/global.scss";
+@import "global/page-body.scss";
 @import "global/reset.scss";
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
 
 //components
 
+@import "components/page-header.scss";
 @import "components/nav.scss";
 @import "components/intro.scss";
 @import "components/promo.scss";
@@ -12,8 +15,13 @@
 @import "components/info.scss";
 @import "components/search.scss";
 @import "components/button.scss";
-@import "components/footer.scss";
+@import "components/page-footer.scss";
+@import "components/social.scss";
 @import "components/form.scss";
 @import "components/article.scss";
 @import "components/error.scss";
 @import "components/result.scss";
+@import "components/copyright.scss";
+@import "components/radio.scss";
+@import "components/check.scss";
+

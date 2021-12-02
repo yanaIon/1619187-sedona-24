@@ -4,18 +4,28 @@
 }
 
 .reasons__header--color-blue {
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: $main-bg-color;
+  color: $another-text-color;
 }
 
 .reasons__header--color-gray {
-  background-color: #eeeeee;
+  background-color: $reasons-color;
   border-bottom: #d6d6d6 1px solid;
 }
 
 .reasons__title {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.reasons__description {
+  font-size: 14px;
+}
+
+.reasons__number {
+  font-size: 14px;
+  margin-bottom: 24px;
 }
 
 .reasons__number::before {
