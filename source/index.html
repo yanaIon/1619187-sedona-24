@@ -2,12 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logo.svg" width="102" height="84" alt="Седона">
+        <img src="img/logo.svg" alt="Седона" width="102" height="84">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,9 +44,7 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="intro">
         <h2 class="visually-hidden">Небольшой городок Седона</h2>
-          <div class="intro__wrapper">
-            <img class ="intro__image" src="img/intro.svg" width="460" height="350" alt="Седона">
-          </div>
+          <img class ="intro__image" src="img/intro.svg" alt="Седона" width="282" height="214">
       </section>
       <section class="promo">
         <div class="promo__wrapper">
@@ -56,9 +57,9 @@
       <section class="reasons">
         <ul class="reasons__list">
           <li class="reasons__item">
-            <div class="reasons__header">
+            <div class="reasons__header reasons__header--color-blue">
               <h3 class="reasons__title">Настоящий городок</h3>
-              <p class="decorated-number">№1</p>
+              <p class="reasons__number">№1</p>
               <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reasons__image">
@@ -82,9 +83,9 @@
             </div>
           </li>
           <li class="reasons__item">
-            <div class="reasons__header">
+            <div class="reasons__header reasons__header--color-blue">
               <h3 class="reasons__title">Там есть мост дьявола</h3>
-              <p class="decorated-number">№2</p>
+              <p class="reasons__number">№2</p>
               <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="reasons__image">
@@ -92,36 +93,36 @@
             </div>
           </li>
           <li class="reasons__item">
-            <div class="reasons__header">
+            <div class="reasons__header reasons__header--color-gray">
               <h3 class="reasons__title">Небольшая площадь</h3>
-              <p class="decorated-number">№3</p>
+              <p class="reasons__number">№3</p>
               <p class="reasons__description">Все интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="reasons__item">
-            <div class="reasons__header">
+            <div class="reasons__header reasons__header--color-gray">
               <h3 class="reasons__title">Красивая дорога</h3>
-              <p class="decorated-number">№4</p>
+              <p class="reasons__number">№4</p>
               <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="reasons__item">
-            <div class="reasons__header">
+            <div class="reasons__header reasons__header--color-gray">
               <h3 class="reasons__title">Мало туристов</h3>
-              <p class="decorated-number">№5</p>
+              <p class="reasons__number">№5</p>
               <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
         </ul>
       </section>
       <section class="search">
-        <h3 class="search__title">Заинтересовались?</h3>
+        <h2 class="search__title">Заинтересовались?</h2>
         <p class="search__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <a class="button" href="#">Найти гостиницу</a>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-          <img src="img/map-mobile.jpg" alt="Карта" width="320" height="350">
+          <img src="img/map-mobile.jpg" alt="Карта" width="320" height="360">
       </section>
     </main>
     <footer class="page-footer">
@@ -142,7 +143,7 @@
         </div>
         <div class="page-footer__copyright">
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <p class="copyright__text">Разработано:</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>

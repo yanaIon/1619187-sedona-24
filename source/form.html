@@ -2,12 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo.svg" width="102" height="60" alt="Седона">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo.svg" width="102" height="84" alt="Седона">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,9 +44,7 @@
       <h1 class="visually-hidden">Отзывы</h1>
       <section class="intro">
         <h2 class="visually-hidden">Небольшой городок Седона</h2>
-          <div class="intro__wrapper">
-            <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
-          </div>
+          <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
       </section>
       <section class="promo">
         <div class="promo__wrapper">
@@ -66,7 +67,7 @@
               Отчество:<input class="form__input" type="text" name="patronymic" placeholder="Александрович">
             </label>
         </section>
-        <section class="contacts">
+        <section class="form__contacts">
           <h3 class="form__header">Контактная информация:</h3>
             <label class="form__label">
               Контактный телефон:<input class="form__input" type="tel" name="tel" placeholder="Введите телефон" required>
@@ -75,7 +76,7 @@
               Электронная почта:<input class="form__input" type="email" name="email"  placeholder="Введите e-mail" required>
             </label>
         </section>
-        <section class="impression">
+        <section class="form__impression">
           <h3 class="form__header">Ваше общее впечатление:</h3>
             <label class="radio">
               <input class="radio__input" type="radio" name="impression" value="positive">
@@ -90,7 +91,7 @@
               Затрудняюсь ответить
             </label>
         </section>
-        <section class="sights-visited">
+        <section class="form__sights-visited">
           <h3 class="form__header">посещенные достопримечательности:</h3>
             <label class= "check">
               <input class= "check__input" type="checkbox">
@@ -109,21 +110,25 @@
               Красные скалы
             </label>
         </section>
-        <section class="emotions">
+        <section class="form__emotions">
           <h3 class="form__header">опишите свои эмоции:</h3>
-          <textarea class="emotions__comment" name="comment" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__emotions-comment" name="comment" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
         </section>
         <button class="button" type="submit">Отправить отзыв</button>
       </form>
       <div class="error">
         <h2 class="error__title">Что-то пошло не так!</h2>
         <p class="error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="button" type="submit">Ок</button>
+        <button class="button button--error" type="submit">Ок</button>
       </div>
       <div class="result">
-        <h2 class="result__title">Ваш отзыв отправлен!</h2>
-        <p class="result__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="button" type="submit">Закрыть</button>
+        <div class="result__desc">
+          <h2 class="result__title">Ваш отзыв отправлен!</h2>
+          <p class="result__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="result__button-wrapper">
+          <button class="button button--result" type="submit">Закрыть окно</button>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
@@ -144,7 +149,7 @@
         </div>
         <div class="page-footer__copyright">
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <p class="copyright__text">Разработано:</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>

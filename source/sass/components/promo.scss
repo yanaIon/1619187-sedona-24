@@ -1,0 +1,20 @@
+.promo__wrapper {
+  padding: 32px 18px 27px 17px;
+  text-align: center;
+}
+
+.promo__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.promo__intro {
+  margin: 0;
+  font-size: 14px;
+}
+
+.promo--catalog {
+  border-bottom: $catalog-bg-color 1px solid;
+}

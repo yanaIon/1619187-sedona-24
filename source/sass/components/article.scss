@@ -1,0 +1,25 @@
+.article {
+  border-bottom: $border-color 1px solid;
+  margin: 22px 20px 15px 20px;
+}
+
+.article__content {
+  margin: 0;
+}
+
+.article__content-img {
+  margin-bottom: 11px;
+}
+
+.article__content-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.article__content-author {
+  font-style: normal;
+  font-size: 14px;
+  text-transform: none;
+}

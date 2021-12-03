@@ -1,0 +1,16 @@
+.nav {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: $main-bg-color;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  color: $another-text-color;
+  text-decoration: none;
+  line-height: 40/18*1;
+}

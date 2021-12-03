@@ -1,0 +1,30 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Убираем внешние отступы */
+body {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и li*/
+ul,
+li {
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  display: block;
+}

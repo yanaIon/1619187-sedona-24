@@ -2,12 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo.svg" width="102" height="60" alt="Седона">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo.svg" width="102" height="84" alt="Седона">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,11 +44,9 @@
       <h1 class="visually-hidden">Каталог</h1>
       <section class="intro">
         <h2 class="visually-hidden">Небольшой городок Седона</h2>
-          <div class="intro__wrapper">
-            <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
-          </div>
+          <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
       </section>
-      <section class="promo">
+      <section class="promo promo--catalog">
         <div class="promo__wrapper">
           <h2 class="promo__title">
             Фото и видео
@@ -56,58 +57,52 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог фото</h2>
         <article class="article">
-          <figure class="article__content article-content">
-            <a class="article-content__link" href="#">
-              <img class="article-content__img" src="img/catalog/photo-1.jpg" alt="Неродные просторы" width="280" height="280">
+          <figure class="article__content">
+            <a class="article__content-link" href="#">
+              <img class="article__content-img" src="img/catalog/photo-1.jpg" alt="Неродные просторы" width="280" height="280">
             </a>
           <figcaption >
-            <h3 class="article-content__title">Неродные просторы</h3>
-            <cite class="article-content__autor" >Автор фото: Борис</cite>
+            <h3 class="article__content-title">Неродные просторы</h3>
+            <cite class="article__content-author" >Автор фото: Борис</cite>
           </figcaption>
           </figure>
           <button class="like" type="button"></button>
         </article>
         <article class="article">
-          <figure class="article__content article-content">
-            <a class="article-content__link" href="#">
-              <img class="article-content__img" src="img/catalog/photo-2.jpg" alt="Местная растительность" width="280" height="280">
+          <figure class="article__content">
+            <a class="article__content-link" href="#">
+              <img class="article__content-img" src="img/catalog/photo-2.jpg" alt="Местная растительность" width="280" height="280">
             </a>
           <figcaption >
-            <h3 class="article-content__title">Местная растительность</h3>
-            <cite class="article-content__autor" >Автор фото: Сергей</cite>
+            <h3 class="article__content-title">Местная растительность</h3>
+            <cite class="article__content-author" >Автор фото: Сергей</cite>
           </figcaption>
           </figure>
-          <div class="article-stats">
-            <button class="like" type="button"><span class="like-number"></span></button>
-          </div>
+          <button class="like" type="button"></button>
         </article>
         <article class="article">
-          <figure class="article__content article-content">
-            <a class="article-content__link" href="#">
-              <img class="article-content__img" src="img/catalog/photo-3.jpg" alt="Дорога на север" width="280" height="280">
+          <figure class="article__content">
+            <a class="article__content-link" href="#">
+              <img class="article__content-img" src="img/catalog/photo-3.jpg" alt="Дорога на север" width="280" height="280">
             </a>
           <figcaption >
-            <h3 class="article-content__title">Дорога на север</h3>
-            <cite class="article-content__autor" >Автор фото: Петр</cite>
+            <h3 class="article__content-title">Дорога на север</h3>
+            <cite class="article__content-author" >Автор фото: Петр</cite>
           </figcaption>
           </figure>
-          <div class="article-stats">
-            <button class="like" type="button"><span class="like-number"></span></button>
-          </div>
+          <button class="like" type="button"></button>
         </article>
         <article class="article">
-          <figure class="article__content article-content">
-            <a class="article-content__link" href="#">
-              <img class="article-content__img" src="img/photo-bridge.jpg" alt="Мост дьявола" width="280" height="280">
+          <figure class="article__content">
+            <a class="article__content-link" href="#">
+              <img class="article__content-img" src="img/photo-bridge.jpg" alt="Мост дьявола" width="280" height="280">
             </a>
           <figcaption >
-            <h3 class="article-content__title">Мост дьявола</h3>
-            <cite class="article-content__autor" >Автор фото: Антон</cite>
+            <h3 class="article__content-title">Мост дьявола</h3>
+            <cite class="article__content-author" >Автор фото: Антон</cite>
           </figcaption>
           </figure>
-          <div class="article-stats">
-            <button class="like" type="button"><span class="like-number"></span></button>
-          </div>
+          <button class="like" type="button"></button>
         </article>
       </section>
       <section class="promo">
@@ -139,7 +134,7 @@
         </div>
         <div class="page-footer__copyright">
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <p class="copyright__text">Разработано:</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>
