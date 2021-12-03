@@ -1,4 +1,5 @@
 .info {
+  padding: 0;
   margin-top: 26px;
   margin-bottom: 35px;
 }
@@ -11,8 +12,10 @@
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 24px;
+  margin: 0;
 }
 
 .info__item-description {
+  margin: 0;
   font-size: 14px;
 }

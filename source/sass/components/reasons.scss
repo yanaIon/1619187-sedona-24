@@ -1,3 +1,8 @@
+.reasons__list {
+  padding: 0;
+  margin: 0;
+}
+
 .reasons__header {
   padding: 55px 20px 39px 18px;
   text-align: center;
@@ -16,15 +21,18 @@
 .reasons__title {
   font-size: 18px;
   font-weight: bold;
+  margin: 0;
   margin-bottom: 20px;
 }
 
 .reasons__description {
+  margin: 0;
   font-size: 14px;
 }
 
 .reasons__number {
   font-size: 14px;
+  margin: 0;
   margin-bottom: 24px;
 }
 

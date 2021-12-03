@@ -4,8 +4,13 @@
   background-color: $main-bg-color;
 }
 
+.nav__list {
+  padding: 0;
+  margin: 0;
+}
+
 .nav__link {
   color: $another-text-color;
   text-decoration: none;
-  line-height: 40px;
+  line-height: math.div(40, 18);
 }
