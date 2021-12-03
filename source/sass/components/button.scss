@@ -6,7 +6,7 @@
   padding: 15px 32px 17px 32px;
   background-color: $main-bg-color;
   font-size: 21px;
-  line-height: math.div(26, 21);
+  line-height: 26/21*1;
   color: $another-text-color;
   font-weight: bold;
   text-decoration: none;

@@ -12,5 +12,5 @@
 .nav__link {
   color: $another-text-color;
   text-decoration: none;
-  line-height: math.div(40, 18);
+  line-height: 40/18*1;
 }
