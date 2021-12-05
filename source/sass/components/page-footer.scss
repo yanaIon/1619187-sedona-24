@@ -1,5 +1,12 @@
 .page-footer {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @include tabletsAndDesctop {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .page-footer__hashtag {

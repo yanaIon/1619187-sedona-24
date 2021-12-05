@@ -1,7 +1,15 @@
 .info {
-  padding: 0;
   margin-top: 26px;
   margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+
+  @include tabletsAndDesctop {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
 }
 
 .info__item {

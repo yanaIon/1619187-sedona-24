@@ -2,9 +2,11 @@
 @import "global/fonts.scss";
 @import "global/reset.scss";
 @import "global/variables.scss";
+@import "global/media.scss";
 
 //components
 @import "components/page-body.scss";
+@import "components/page-header.scss";
 @import "components/visually-hidden.scss";
 @import "components/nav.scss";
 @import "components/intro.scss";

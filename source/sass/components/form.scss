@@ -16,13 +16,13 @@
   font-size: 18px;
   height: 58px;
   padding-left: 22px;
-  color: $form-text-color;
+  color: var(--form-text-color);
   font-weight: bold;
-  background-color: $form-bg-color;
+  background-color: var(--form-bg-color);
   border: transparent;
 
   &:hover {
-    background-color: $form-bg-hover-color;
+    background-color: var(--form-bg-hover-color);
   }
 }
 
@@ -92,10 +92,10 @@
 
 .form__emotions-comment {
   width: 100%;
-  color: $form-text-color;
+  color: var(--form-text-color);
   font-size: 18px;
   font-weight: bold;
   padding: 13px 23px 29px 21px;
-  background-color: $form-bg-color;
+  background-color: var(--form-bg-color);
   border: transparent;
 }

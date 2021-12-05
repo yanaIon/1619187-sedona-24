@@ -1,5 +1,5 @@
 .article {
-  border-bottom: $border-color 1px solid;
+  border-bottom: var(--border-color) 1px solid;
   margin: 22px 20px 15px 20px;
 }
 
