@@ -8,133 +8,133 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo.svg" width="102" height="84" alt="Седона">
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--active" href="#">
+    <div class="container">
+      <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo.svg" width="102" height="84" alt="Седона">
+        </a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">
+                Фото и видео
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Html academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page__main">
+        <h1 class="visually-hidden">Каталог</h1>
+        <section class="intro">
+          <h2 class="visually-hidden">Небольшой городок Седона</h2>
+            <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
+        </section>
+        <section class="promo promo--catalog">
+          <div class="promo__wrapper">
+            <h2 class="promo__title">
               Фото и видео
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              Html academy
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page__main">
-      <h1 class="visually-hidden">Каталог</h1>
-      <section class="intro">
-        <h2 class="visually-hidden">Небольшой городок Седона</h2>
-          <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
-      </section>
-      <section class="promo promo--catalog">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">
-            Фото и видео
-          </h2>
-          <p class="promo__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            </h2>
+            <p class="promo__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+        </section>
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог фото</h2>
+          <article class="article">
+            <figure class="article__content">
+              <a class="article__content-link" href="#">
+                <img class="article__content-img" src="img/catalog/photo-1.jpg" alt="Неродные просторы" width="280" height="280">
+              </a>
+            <figcaption >
+              <h3 class="article__content-title">Неродные просторы</h3>
+              <cite class="article__content-author" >Автор фото: Борис</cite>
+            </figcaption>
+            </figure>
+            <button class="like" type="button"></button>
+          </article>
+          <article class="article">
+            <figure class="article__content">
+              <a class="article__content-link" href="#">
+                <img class="article__content-img" src="img/catalog/photo-2.jpg" alt="Местная растительность" width="280" height="280">
+              </a>
+            <figcaption >
+              <h3 class="article__content-title">Местная растительность</h3>
+              <cite class="article__content-author" >Автор фото: Сергей</cite>
+            </figcaption>
+            </figure>
+            <button class="like" type="button"></button>
+          </article>
+          <article class="article">
+            <figure class="article__content">
+              <a class="article__content-link" href="#">
+                <img class="article__content-img" src="img/catalog/photo-3.jpg" alt="Дорога на север" width="280" height="280">
+              </a>
+            <figcaption>
+              <h3 class="article__content-title">Дорога на север</h3>
+              <cite class="article__content-author" >Автор фото: Петр</cite>
+            </figcaption>
+            </figure>
+            <button class="like" type="button"></button>
+          </article>
+          <article class="article">
+            <figure class="article__content">
+              <a class="article__content-link" href="#">
+                <img class="article__content-img" src="img/photo-bridge.jpg" alt="Мост дьявола" width="280" height="280">
+              </a>
+            <figcaption >
+              <h3 class="article__content-title">Мост дьявола</h3>
+              <cite class="article__content-author" >Автор фото: Антон</cite>
+            </figcaption>
+            </figure>
+            <button class="like" type="button"></button>
+          </article>
+        </section>
+        <section class="promo">
+          <div class="promo__wrapper">
+            <h2 class="promo__title">
+              Вы еще сомневаетесь?
+            </h2>
+            <p class="promo__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <video class="promo__video" controls preload="metadata" width="320" height="201" poster="img/catalog/video.jpg">
+          </video>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__hashtag">#visitsedona</div>
+          <ul class="page-footer__social social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы на Ютьюбе</a>
+            </li>
+          </ul>
+        <div class="page-footer__copyright">
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано:</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
         </div>
-      </section>
-      <section class="catalog">
-        <h2 class="visually-hidden">Каталог фото</h2>
-        <article class="article">
-          <figure class="article__content">
-            <a class="article__content-link" href="#">
-              <img class="article__content-img" src="img/catalog/photo-1.jpg" alt="Неродные просторы" width="280" height="280">
-            </a>
-          <figcaption >
-            <h3 class="article__content-title">Неродные просторы</h3>
-            <cite class="article__content-author" >Автор фото: Борис</cite>
-          </figcaption>
-          </figure>
-          <button class="like" type="button"></button>
-        </article>
-        <article class="article">
-          <figure class="article__content">
-            <a class="article__content-link" href="#">
-              <img class="article__content-img" src="img/catalog/photo-2.jpg" alt="Местная растительность" width="280" height="280">
-            </a>
-          <figcaption >
-            <h3 class="article__content-title">Местная растительность</h3>
-            <cite class="article__content-author" >Автор фото: Сергей</cite>
-          </figcaption>
-          </figure>
-          <button class="like" type="button"></button>
-        </article>
-        <article class="article">
-          <figure class="article__content">
-            <a class="article__content-link" href="#">
-              <img class="article__content-img" src="img/catalog/photo-3.jpg" alt="Дорога на север" width="280" height="280">
-            </a>
-          <figcaption>
-            <h3 class="article__content-title">Дорога на север</h3>
-            <cite class="article__content-author" >Автор фото: Петр</cite>
-          </figcaption>
-          </figure>
-          <button class="like" type="button"></button>
-        </article>
-        <article class="article">
-          <figure class="article__content">
-            <a class="article__content-link" href="#">
-              <img class="article__content-img" src="img/photo-bridge.jpg" alt="Мост дьявола" width="280" height="280">
-            </a>
-          <figcaption >
-            <h3 class="article__content-title">Мост дьявола</h3>
-            <cite class="article__content-author" >Автор фото: Антон</cite>
-          </figcaption>
-          </figure>
-          <button class="like" type="button"></button>
-        </article>
-      </section>
-      <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">
-            Вы еще сомневаетесь?
-          </h2>
-          <p class="promo__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </div>
-        <video class="promo__video" controls preload="metadata" width="320" height="201" poster="img/catalog/video.jpg">
-        </video>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__hashtag">#visitsedona</div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы на Ютьюбе</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

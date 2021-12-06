@@ -1,13 +1,12 @@
 .info {
   margin-top: 26px;
   margin-bottom: 35px;
-  display: flex;
-  flex-direction: column;
 
   @include tabletsAndDesctop {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
+    padding: 0;
     text-align: center;
   }
 }
