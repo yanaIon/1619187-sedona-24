@@ -8,6 +8,10 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 30px;
+
+  @include tabletsAndDesctop {
+    font-size: 21px;
+  }
 }
 
 .promo__intro {
@@ -16,5 +20,5 @@
 }
 
 .promo--catalog {
-  border-bottom: $catalog-bg-color 1px solid;
+  border-bottom: var(--catalog-bg-color) 1px solid;
 }

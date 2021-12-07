@@ -1,9 +1,61 @@
-$another-text-color: #ffffff;
-$form-text-color: #000000;
-$main-bg-color: #81b3d2;
-$form-bg-down-color: #d5d5d5;
-$reasons-color: #eeeeee;
-$form-bg-color: #f2f2f2;
-$form-bg-hover-color: #e5e5e5;
-$border-color: #e5e5e5;
-$catalog-bg-color: #e5e5e5;
+// Viewports
+$desktop-low: 1240px;
+$tablets-low: 768px;
+$tablets-high: 1200px;
+
+//colors
+:root {
+  --bright: #81b3d2;
+  --white: #ffffff;
+  --black: #000000;
+  --brown: #766357;
+
+  --gray-light: #d5d5d5;
+  --gray-lighter: #eeeeee;
+  --gray: #f2f2f2;
+  --gray-darker: #e5e5e5;
+
+  --another-text-color: var(--white);
+  --another-bg-color: var(--white);
+  --form-text-color: var(--black);
+  --main-color: var(--bright);
+  --button-bg-color: var(--bright);
+  --form-bg-down-color: var(--gray-light);
+  --reasons-color: var(--gray-lighter);
+  --form-bg-color: var(--gray);
+  --form-bg-hover-color: var(--gray-darker);
+  --border-color: var(--gray-darker);
+  --catalog-bg-color: var(--gray-darker);
+  --nav-current: var(--brown);
+  --nav-hover: var(--bright);
+  --main-bg-color: var(--bright);
+}
+
+//colors
+/*
+$bright: #81b3d2;
+$white: #ffffff;
+$black: #000000;
+$brown: #766357;
+
+$gray-light: #d5d5d5;
+$gray-lighter: #eeeeee;
+$gray: #f2f2f2;
+$gray-darker: #e5e5e5;
+
+
+$another-text-color: $white;
+$another-bg-color: $white;
+$form-text-color: $black;
+$main-color: $bright;
+$button-bg-color: $bright;
+$form-bg-down-color: $gray-light;
+$reasons-color: $gray-lighter;
+$form-bg-color: $gray;
+$form-bg-hover-color: $gray-darker;
+$border-color: $gray-darker;
+$catalog-bg-color: $gray-darker;
+$nav-current: $brown;
+$nav-hover: $bright;
+$main-bg-color: $bright;
+*/
