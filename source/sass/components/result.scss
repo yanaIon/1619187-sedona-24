@@ -1,5 +1,19 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+  @include tabletsAndDesctop {
+    max-width: 640px;
+    margin: 0 auto;
+    box-shadow:
+      -5px 5px 5px rgba(0, 0, 0, 0.2),
+      5px 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .result__desc {
-  margin: 38px 39px 29px 37px;
+  padding: 38px 39px 29px 37px;
   text-align: center;
 }
 

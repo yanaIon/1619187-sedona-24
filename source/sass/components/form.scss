@@ -1,3 +1,36 @@
+.form {
+  display: grid;
+  margin-right: 20px;
+  margin-left: 20px;
+  row-gap: 45px;
+
+  @include tabletsAndDesctop {
+    row-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include tablets {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 61px;
+  }
+
+  @include desctop {
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-bottom: 61px;
+  }
+}
+
+.form__required {
+  display: none;
+
+  @include tabletsAndDesctop {
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+}
+
 .form__header {
   text-align: center;
   font-size: 18px;
@@ -28,10 +61,13 @@
 
 //form__introduce
 .form__introduce {
-  margin: 20px 20px 25px 20px;
   display: grid;
   gap: 20px;
   justify-items: stretch;
+
+  @include tabletsAndDesctop {
+    margin-bottom: 72px;
+  }
 }
 
 .form__introduce .form__label {
@@ -44,9 +80,23 @@
 
 //contacts
 .form__contacts {
-  margin: 20px 20px 25px 20px;
   display: grid;
   gap: 15px;
+
+  @include tabletsAndDesctop {
+    grid-column: 1/-1;
+    margin-bottom: 51px;
+  }
+
+  @include desctop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__contacts .form__header {
+  @include desctop {
+    grid-column: 1/-1;
+  }
 }
 
 .form__contacts .form__input {
@@ -63,7 +113,11 @@
 .form__impression {
   display: grid;
   gap: 43px;
-  margin: 20px 12px 31px 24px;
+
+  @include tabletsAndDesctop {
+    grid-row: 1/2;
+    margin-bottom: 72px;
+  }
 }
 
 .form__impression label {
@@ -74,9 +128,20 @@
 
 //sight-visited
 .form__sights-visited {
-  margin: 15px 25px 30px 24px;
   display: grid;
   gap: 24px;
+  grid-column: 1/-1;
+
+  @include tablets {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-bottom: 75px;
+  }
+
+  @include desctop {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 75px;
+  }
 }
 
 .form__sights-visited label {
@@ -85,9 +150,18 @@
   font-size: 18px;
 }
 
+.form__sights-visited .form__header {
+  @include tabletsAndDesctop {
+    grid-column: 1/-1;
+  }
+}
+
 //emotions
 .form__emotions {
-  margin: 20px 22px 51px 19px;
+  @include tabletsAndDesctop {
+    grid-column: 1/-1;
+    margin-bottom: 58px;
+  }
 }
 
 .form__emotions-comment {

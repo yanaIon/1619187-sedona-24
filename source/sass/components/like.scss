@@ -1,0 +1,11 @@
+.like {
+  width: 23px;
+  height: 21px;
+
+  @include tabletsAndDesctop {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

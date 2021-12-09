@@ -1,0 +1,19 @@
+.catalog {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 60px 60px 60px;
+  }
+
+  @include desctop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 60px 60px 60px;
+  }
+}
