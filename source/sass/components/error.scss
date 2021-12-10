@@ -1,17 +1,15 @@
 .error {
-  display: flex;
+  display: none;
+  //display: flex;
   flex-direction: column;
   padding: 40px 42px 35px 42px;
   text-align: center;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     max-width: 400px;
     margin: 0 auto;
     margin-bottom: 20px;
-    box-shadow:
-      -5px 5px 5px rgba(0, 0, 0, 0.2),
-      5px 0 5px rgba(0, 0, 0, 0.2);
   }
 }
 

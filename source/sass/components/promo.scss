@@ -9,7 +9,7 @@
   text-align: center;
   padding-bottom: 20px;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     width: 450px;
     margin: 0 auto;
   }
@@ -21,7 +21,7 @@
   font-weight: bold;
   margin-bottom: 30px;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     font-size: 21px;
   }
 }
@@ -48,7 +48,7 @@
     margin-bottom: 40px;
   }
 
-  @include desctop {
+  @include desktop {
     display: flex;
     margin: 0 auto;
     min-width: 800px;

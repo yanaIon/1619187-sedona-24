@@ -4,7 +4,7 @@
   margin-left: 20px;
   row-gap: 45px;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     row-gap: 0;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -15,7 +15,7 @@
     margin-bottom: 61px;
   }
 
-  @include desctop {
+  @include desktop {
     margin-right: 120px;
     margin-left: 120px;
     margin-bottom: 61px;
@@ -25,7 +25,7 @@
 .form__required {
   display: none;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     display: inline-flex;
     justify-content: flex-end;
   }
@@ -44,7 +44,7 @@
 }
 
 .form__label span {
-  @include desctop {
+  @include desktop {
     position: absolute;
     opacity: 0;
   }
@@ -72,7 +72,7 @@
   gap: 20px;
   justify-items: stretch;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     margin-bottom: 72px;
   }
 }
@@ -90,18 +90,18 @@
   display: grid;
   gap: 15px;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     grid-column: 1/-1;
     margin-bottom: 51px;
   }
 
-  @include desctop {
+  @include desktop {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .form__contacts .form__header {
-  @include desctop {
+  @include desktop {
     grid-column: 1/-1;
   }
 }
@@ -121,7 +121,7 @@
   display: grid;
   gap: 43px;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     grid-row: 1/2;
     margin-bottom: 72px;
   }
@@ -145,7 +145,7 @@
     margin-bottom: 75px;
   }
 
-  @include desctop {
+  @include desktop {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 75px;
   }
@@ -158,14 +158,14 @@
 }
 
 .form__sights-visited .form__header {
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     grid-column: 1/-1;
   }
 }
 
 //emotions
 .form__emotions {
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     grid-column: 1/-1;
     margin-bottom: 58px;
   }

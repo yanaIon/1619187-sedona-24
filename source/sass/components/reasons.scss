@@ -1,11 +1,11 @@
 .reasons__item {
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     grid-column: span 1;
   }
 }
 
 .reasons__item--full-width {
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column: span 3;
@@ -16,7 +16,7 @@
   padding: 0;
   margin-bottom: 33px;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 60px;
@@ -66,20 +66,20 @@
 }
 
 .reasons__image {
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     grid-column: span 2;
   }
 }
 
 .reasons__image--reverse {
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     grid-column: 1 / 3;
     grid-row: 1 / 1;
   }
 }
 
 .reasons__header--reverse {
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     grid-column: -1 / -2;
   }
 }
