@@ -43,6 +43,13 @@
   font-size: 14px;
 }
 
+.form__label span {
+  @include desctop {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
 .form__input {
   flex-grow: 1;
   width: 100%;
