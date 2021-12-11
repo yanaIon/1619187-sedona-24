@@ -13,9 +13,20 @@
         <a class="page-header__logo">
           <img src="img/logo.svg" alt="Седона" width="102" height="84">
         </a>
-        <nav class="nav">
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="nav__list">
+        <nav class="nav nav--open nav--nojs">
+          <button class="nav__toggle nav__toggle--open" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
+            <svg class="nav__icon" aria-hidden="true" width = "23" height="23">
+              <svg class="nav__icon-menu"  aria-hidden="true" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.9 0H0V4H22.9V0Z"/>
+                <path d="M22.9 9H0V13H22.9V9Z"/>
+                <path d="M22.9 18H0V22H22.9V18Z"/>
+              </svg>
+              <svg class="nav__icon-cross" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"/>
+              </svg>
+            </svg>
+          </button>
+          <ul class="nav__list nav__list--open" id="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="#">
                 Главная
@@ -146,5 +157,20 @@
         </div>
       </footer>
     </div>
+    <script>
+      (() => {
+        const menu = document.querySelector('.nav');
+        const menuButton = document.querySelector('.nav__toggle');
+        const menuList = document.querySelector('.nav__list');
+
+        menuButton.addEventListener('click', () => {
+          let expanded = menuButton.getAttribute('aria-expanded') === 'true' || 'false';
+          menuButton.setAttribute('aria-expanded', !expanded);
+          menuButton.classList.toggle('nav__toggle--open');
+          menuList.classList.toggle('nav__list--open');
+          menu.classList.toggle('nav--open')
+        });
+      }) ();
+    </script>
   </body>
 </html>

@@ -8,13 +8,9 @@
   background-size: cover;
   background-position: center;
   margin-bottom: 32px;
-  min-height: 158px;
+  min-height: 389px;
 
-  @include tablets {
-    min-height: 290px;
-  }
-
-  @include desktop {
-    min-height: 301px;
+  @include tabletsAndDesktop {
+    min-height: 518px;
   }
 }

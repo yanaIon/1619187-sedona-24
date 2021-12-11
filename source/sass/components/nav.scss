@@ -1,7 +1,7 @@
 .nav {
   font-size: 18px;
   font-weight: bold;
-  background-color: var(--main-bg-color);
+  background-color: var(--another-bg-color);
 
   @include tabletsAndDesktop {
     font-size: 14px;
@@ -12,6 +12,7 @@
 }
 
 .nav__list {
+  display: none;
   padding: 0;
   margin: 0;
 
@@ -19,6 +20,12 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
+  }
+}
+
+.nav__list--open {
+  @include mobile {
+    display: grid;
   }
 }
 
@@ -39,7 +46,59 @@
 }
 
 .nav__toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+
   @include tabletsAndDesktop {
+    display: none;
+  }
+}
+
+.nav__icon-menu,
+.nav__toggle--open .nav__icon-cross {
+  @include mobile {
+    display: block;
+    fill: var(--another-bg-color);
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.nav__icon-cross,
+.nav__toggle--open .nav__icon-menu {
+  @include mobile {
+    display: none;
+    fill: var(--main-color);
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.nav--open {
+  @include mobile {
+    position: relative;
+    z-index: 5;
+    background-color: var(--main-bg-color);
+  }
+}
+
+.nav--nojs .nav__toggle {
+  @include mobile {
     display: none;
   }
 }
@@ -48,5 +107,16 @@
   @include tabletsAndDesktop {
     grid-column-start: 4;
     grid-column-end: 5;
+  }
+}
+
+@include mobile {
+  .nav--nojs .nav__list {
+    position: static;
+    min-height: 0;
+  }
+
+  .nav--nojs .nav__item {
+    display: block;
   }
 }
