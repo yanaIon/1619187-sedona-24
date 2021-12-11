@@ -1,6 +1,16 @@
 .error {
-  margin: 40px 42px 35px 42px;
+  display: none;
+  //display: flex;
+  flex-direction: column;
+  padding: 40px 42px 35px 42px;
   text-align: center;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @include tabletsAndDesktop {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 .error__title {

@@ -1,5 +1,17 @@
+.result {
+  display: none;
+  //display: flex;
+  flex-direction: column;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @include tabletsAndDesktop {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
 .result__desc {
-  margin: 38px 39px 29px 37px;
+  padding: 38px 39px 29px 37px;
   text-align: center;
 }
 

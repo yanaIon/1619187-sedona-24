@@ -3,7 +3,7 @@
   font-weight: bold;
   background-color: var(--main-bg-color);
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     font-size: 14px;
     padding-top: 14px;
     padding-bottom: 16px;
@@ -15,7 +15,7 @@
   padding: 0;
   margin: 0;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
@@ -27,25 +27,25 @@
   text-decoration: none;
   line-height: 40/18*1;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     color: var(--form-text-color);
   }
 }
 
 .nav__link--active {
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     color: var(--nav-current);
   }
 }
 
 .nav__toggle {
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     display: none;
   }
 }
 
-.nav__item:nth-child(3) {
-  @include tabletsAndDesctop {
+.nav__item:nth-last-child(2) {
+  @include tabletsAndDesktop {
     grid-column-start: 4;
     grid-column-end: 5;
   }

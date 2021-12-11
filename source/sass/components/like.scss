@@ -1,0 +1,28 @@
+.like {
+  width: 100px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+
+  @include tabletsAndDesktop {
+    grid-row: span 2;
+    align-self: center;
+    justify-self: end;
+  }
+
+  @include desktop {
+    color: var(--another-text-color);
+  }
+}
+
+.like svg {
+  display: block;
+  position: absolute;
+  left: 0;
+  opacity: 0.3;
+
+  @include desktop {
+    opacity: 1;
+    fill: var(--another-text-color);
+  }
+}

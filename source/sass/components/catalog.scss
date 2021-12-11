@@ -1,0 +1,17 @@
+.catalog {
+  display: grid;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @include tablets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 60px 60px 60px;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 60px 60px 60px;
+  }
+}

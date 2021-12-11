@@ -1,6 +1,18 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto 20px;
+}
+
 .promo__wrapper {
-  padding: 32px 18px 27px 17px;
   text-align: center;
+  padding-bottom: 20px;
+
+  @include tabletsAndDesktop {
+    width: 450px;
+    margin: 0 auto;
+  }
 }
 
 .promo__title {
@@ -9,7 +21,7 @@
   font-weight: bold;
   margin-bottom: 30px;
 
-  @include tabletsAndDesctop {
+  @include tabletsAndDesktop {
     font-size: 21px;
   }
 }
@@ -21,4 +33,26 @@
 
 .promo--catalog {
   border-bottom: var(--catalog-bg-color) 1px solid;
+
+  @include tablets {
+    border-bottom: none;
+  }
+}
+
+.promo__video {
+  @include tablets {
+    display: flex;
+    margin: 0 auto;
+    min-width: 648px;
+    min-height: 500px;
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    display: flex;
+    margin: 0 auto;
+    min-width: 800px;
+    min-height: 500px;
+    margin-bottom: 85px;
+  }
 }
