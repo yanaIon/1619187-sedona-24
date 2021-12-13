@@ -14,6 +14,23 @@
   margin: auto;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--nav-list-button-hover);
+  }
+
+  &:active {
+    background-color: var(--nav-list-button-active);
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: var(--disabled-bg-color);
+  }
+}
+
+.button-disabled {
+  background-color: var(--disabled-bg-color);
 }
 
 .button--error {

@@ -1,9 +1,10 @@
 .page-footer {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include tabletsAndDesktop {
+    min-height: 120px;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -12,4 +13,15 @@
 .page-footer__hashtag {
   font-size: 21px;
   font-weight: bold;
+  margin-bottom: 34px;
+  padding-top: 28px;
+
+  @include tabletsAndDesktop {
+    padding-top: 0;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  margin-bottom: 23px;
 }

@@ -1,8 +1,14 @@
 .info {
+  display: grid;
   margin-top: 26px;
   margin-bottom: 35px;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 45px;
+  position: relative;
 
   @include tabletsAndDesktop {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column: span 3;
@@ -13,6 +19,25 @@
 
 .info__item {
   margin-bottom: 26px;
+  padding-left: 48px;
+
+  @include tabletsAndDesktop {
+    position: relative;
+    padding-left: 0;
+  }
+}
+
+.info__item--gift {
+  @include tabletsAndDesktop {
+    grid-column: -1/-2;
+  }
+}
+
+.info__item--food {
+  @include tabletsAndDesktop {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
 }
 
 .info__item-title {
@@ -20,6 +45,87 @@
   font-weight: bold;
   padding-bottom: 24px;
   margin: 0;
+}
+
+.info__item-title--house {
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    left: 0;
+  }
+
+  @include tabletsAndDesktop {
+    padding-top: 101px;
+
+    &::before {
+      width: 72px;
+      height: 75px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.info__item-title--gift {
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    left: 0;
+  }
+
+  @include tabletsAndDesktop {
+    padding-top: 101px;
+
+    &::before {
+      width: 68px;
+      height: 76px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.info__item-title--food {
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    left: 0;
+  }
+
+  @include tabletsAndDesktop {
+    padding-top: 101px;
+
+    &::before {
+      width: 64px;
+      height: 75px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .info__item-description {
