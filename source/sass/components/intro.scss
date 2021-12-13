@@ -10,6 +10,14 @@
   margin-bottom: 32px;
   min-height: 389px;
 
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   background-image: url("img/icon/intro-triangle.svg");
+  //   width: 320px;
+  //   height: 57px;
+  // }
+
   @include tabletsAndDesktop {
     min-height: 518px;
   }

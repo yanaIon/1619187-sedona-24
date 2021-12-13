@@ -3,9 +3,13 @@
   padding: 0;
   margin: 0;
   margin-bottom: 40px;
+
+  @include tabletsAndDesktop {
+    margin-bottom: 0;
+  }
 }
 
-.social__item {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;

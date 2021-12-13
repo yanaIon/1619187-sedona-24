@@ -18,10 +18,15 @@
 
   @include tabletsAndDesktop {
     padding-top: 0;
+    margin-bottom: 0;
   }
 }
 
 .page-footer__copyright {
   display: flex;
   margin-bottom: 23px;
+
+  @include tabletsAndDesktop {
+    margin-bottom: 0;
+  }
 }
