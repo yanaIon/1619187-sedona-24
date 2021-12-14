@@ -13,9 +13,15 @@
         <a class="page-header__logo">
           <img src="img/logo.svg" alt="Седона" width="102" height="84">
         </a>
-        <nav class="nav">
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="nav__list">
+        <!-- nav--nojs -->
+        <nav class="nav nav--open">
+          <button class="nav__toggle nav__toggle--open" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
+            <svg class="nav__icon" aria-hidden="true" width = "23" height="23">
+              <use class="nav__icon-menu" href="img/icon/sprite.svg#icon-menu"></use>
+              <use class="nav__icon-cross" href="img/icon/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="nav__list nav__list--open" id="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="#">
                 Главная
@@ -62,19 +68,19 @@
                   <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="reasons__image">
-                  <img src="img/photo-city.jpg" alt="Фото города" width="520" height="260">
+                  <img src="img/photo-city.jpg" alt="Фото города" width="320" height="260">
                 </div>
               <ul class="info">
-                <li class="info__item">
-                  <p class="info__item-title">Жилье</p>
+                <li class="info__item info__item--house">
+                  <p class="info__item-title info__item-title--house">Жилье</p>
                   <p class="info__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class="info__item">
-                  <p class="info__item-title">Сувениры</p>
+                <li class="info__item info__item--gift">
+                  <p class="info__item-title info__item-title--gift">Сувениры</p>
                   <p class="info__item-description">Не только китайского, но и местного производства!</p>
                 </li>
-                <li class="info__item">
-                  <p class="info__item-title">Еда</p>
+                <li class="info__item info__item--food">
+                  <p class="info__item-title info__item-title--food">Еда</p>
                   <p class="info__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
@@ -86,7 +92,7 @@
                 <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="reasons__image reasons__image--reverse">
-                <img src="img/photo-bridge.jpg" alt="Мост дьявола" width="520" height="260">
+                <img src="img/photo-bridge.jpg" alt="Мост дьявола" width="320" height="260">
               </div>
             </li>
             <li class="reasons__item">
@@ -129,22 +135,51 @@
         <div class="page-footer__hashtag">#visitsedona</div>
           <ul class="page-footer__social social">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="#">
+                <svg class="social__link-image" width = "20" height = "14" fill = "#ffffff">
+                  <use href="img/icon/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="#">
+                <svg class="social__link-image" width = "20" height = "14" fill = "#ffffff">
+                  <use href="img/icon/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы на Ютьюбе</a>
+              <a class="social__link social__link--youtube" href="#">
+                <svg class="social__link-image" width = "20" height = "14" fill = "#ffffff">
+                  <use href="img/icon/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        <div class="page-footer__copyright">
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано:</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link-image" width = "27" height= "34">
+              <use xlink:href="img/icon/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </footer>
     </div>
+    <script>
+      (() => {
+        const menu = document.querySelector('.nav');
+        const menuButton = document.querySelector('.nav__toggle');
+        const menuList = document.querySelector('.nav__list');
+
+        menuButton.addEventListener('click', () => {
+          let expanded = menuButton.getAttribute('aria-expanded') === 'true' || 'false';
+          menuButton.setAttribute('aria-expanded', !expanded);
+          menuButton.classList.toggle('nav__toggle--open');
+          menuList.classList.toggle('nav__list--open');
+          menu.classList.toggle('nav--open')
+        });
+      }) ();
+    </script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 // Viewports
+$mobile-low: 320px;
 $desktop-low: 1200px;
 $tablets-low: 768px;
 $tablets-high: 1200px;
@@ -6,6 +7,8 @@ $tablets-high: 1200px;
 //colors
 :root {
   --bright: #81b3d2;
+  --dark-bright: #669ec0;
+  --bright-darker: #5496bd;
   --white: #ffffff;
   --black: #000000;
   --brown: #766357;
@@ -29,8 +32,11 @@ $tablets-high: 1200px;
   --another-catalog-color: var(--black);
   --nav-current: var(--brown);
   --nav-hover: var(--bright);
+  --nav-list-button-hover: var(--dark-bright);
+  --nav-list-button-active: var(--bright-darker);
   --main-bg-color: var(--bright);
   --figcaption-bg-color: var(--gray);
+  --disabled-bg-color: var(--gray-darker);
 }
 
 //colors

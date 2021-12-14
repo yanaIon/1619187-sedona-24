@@ -1,3 +1,9 @@
+@mixin mobile {
+  @media screen and (min-width: $mobile-low) and (max-width: 767px) {
+    @content;
+  }
+}
+
 @mixin tablets {
   @media screen and (min-width: $tablets-low) and (max-width: $tablets-high) {
     @content;

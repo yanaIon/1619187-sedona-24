@@ -1,7 +1,8 @@
 .nav {
   font-size: 18px;
   font-weight: bold;
-  background-color: var(--main-bg-color);
+  background-color: var(--another-bg-color);
+  min-height: 56px;
 
   @include tabletsAndDesktop {
     font-size: 14px;
@@ -12,6 +13,7 @@
 }
 
 .nav__list {
+  display: none;
   padding: 0;
   margin: 0;
 
@@ -22,13 +24,38 @@
   }
 }
 
+.nav__list--open {
+  @include mobile {
+    display: grid;
+  }
+}
+
 .nav__link {
   color: var(--another-text-color);
   text-decoration: none;
   line-height: 40/18*1;
 
+  @include mobile {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   @include tabletsAndDesktop {
     color: var(--form-text-color);
+
+    &:hover {
+      color: var(--main-color);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
@@ -39,8 +66,73 @@
 }
 
 .nav__toggle {
+  display: block;
+  margin: 0;
+  padding-top: 17px;
+  border: none;
+  background: transparent;
+  margin-left: auto;
+  margin-right: 17px;
+
   @include tabletsAndDesktop {
     display: none;
+  }
+}
+
+.nav__toggle--open {
+  padding-top: 0;
+}
+
+.nav__toggle--open .nav__icon {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+}
+
+.nav__icon-menu,
+.nav__toggle--open .nav__icon-cross {
+  @include mobile {
+    display: block;
+  }
+}
+
+.nav__icon-cross,
+.nav__toggle--open .nav__icon-menu {
+  @include mobile {
+    display: none;
+  }
+}
+
+.nav__icon-menu {
+  fill: var(--main-bg-color);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav__icon-cross {
+  fill: var(--another-bg-color);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav--open {
+  @include mobile {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--main-bg-color);
   }
 }
 
@@ -48,5 +140,35 @@
   @include tabletsAndDesktop {
     grid-column-start: 4;
     grid-column-end: 5;
+  }
+}
+
+.nav__item {
+  @include mobile {
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      background-color: var(--nav-list-button-hover);
+    }
+
+    &:active {
+      background-color: var(--nav-list-button-active);
+    }
+  }
+}
+
+@include mobile {
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+
+  .nav--nojs .nav__list {
+    position: static;
+    min-height: 0;
+  }
+
+  .nav--nojs .nav__item {
+    display: block;
   }
 }

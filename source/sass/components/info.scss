@@ -1,28 +1,131 @@
 .info {
+  display: grid;
   margin-top: 26px;
   margin-bottom: 35px;
+  padding: 0;
+  margin-left: 25px;
+  margin-right: 45px;
 
   @include tabletsAndDesktop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column: span 3;
-    padding: 0;
     text-align: center;
+    margin-left: 37px;
+    margin-right: 37px;
   }
 }
 
-.info__item {
-  margin-bottom: 26px;
+.info__item--house {
+  @include mobile {
+    display: grid;
+    grid-template-columns: 37px auto;
+    align-items: center;
+    column-gap: 11px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 37px;
+    height: 37px;
+  }
+
+  @include tabletsAndDesktop {
+    display: grid;
+    align-items: start;
+    row-gap: 26px;
+    justify-items: center;
+    grid-template-rows: 75px 26px auto;
+
+    &::before {
+      width: 72px;
+      height: 75px;
+    }
+  }
+}
+
+.info__item--gift {
+  @include mobile {
+    display: grid;
+    grid-template-columns: 37px auto;
+    align-items: center;
+    column-gap: 11px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 37px;
+    height: 37px;
+  }
+
+  @include tabletsAndDesktop {
+    display: grid;
+    grid-column: -1/-2;
+    align-items: start;
+    row-gap: 26px;
+    justify-items: center;
+    grid-template-rows: 75px 26px auto;
+
+    &::before {
+      width: 72px;
+      height: 75px;
+    }
+  }
+}
+
+.info__item--food {
+  @include mobile {
+    display: grid;
+    grid-template-columns: 37px auto;
+    align-items: center;
+    column-gap: 11px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 37px;
+    height: 37px;
+  }
+
+  @include tabletsAndDesktop {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    align-items: start;
+    row-gap: 26px;
+    justify-items: center;
+    grid-template-rows: 75px 26px auto;
+
+    &::before {
+      width: 64px;
+      height: 75px;
+    }
+  }
 }
 
 .info__item-title {
   font-size: 18px;
   font-weight: bold;
-  padding-bottom: 24px;
   margin: 0;
 }
 
 .info__item-description {
   margin: 0;
   font-size: 14px;
+  grid-column: 2/-1;
 }
