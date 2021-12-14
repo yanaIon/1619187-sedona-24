@@ -221,4 +221,14 @@
   padding: 13px 23px 29px 21px;
   background-color: var(--form-bg-color);
   border: transparent;
+  outline: none;
+
+  &:hover {
+    background-color: var(--form-bg-hover-color);
+  }
+
+  &:active {
+    background-color: var(--another-text-color);
+    border: 4px solid var(--form-bg-hover-color);
+  }
 }
