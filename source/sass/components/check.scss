@@ -1,0 +1,38 @@
+.check {
+  display: grid;
+  grid-template-columns: 46px auto;
+  align-items: center;
+  column-gap: 28px;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check__box {
+  width: 46px;
+  height: 46px;
+  background-color: var(--form-bg-color);
+  border-radius: 5px;
+}
+
+.check__input:hover + .check__box {
+  background-color: var(--form-bg-hover-color);
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../img/icon/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.check__input:active + .check__box {
+  background-color: var(--form-bg-down-color);
+  background-image: url("../img/icon/tick-active.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
