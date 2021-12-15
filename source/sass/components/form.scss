@@ -54,7 +54,7 @@
   }
 }
 
-.form__label span {
+.form__label-tel {
   @include desktop {
     position: absolute;
     opacity: 0;
@@ -92,14 +92,14 @@
   height: 56px;
 }
 
-.form__image--phone {
+.form__image-phone {
   fill: var(--form-text-color);
   bottom: 20px;
   position: absolute;
   right: 20px;
 }
 
-.form__image--mail {
+.form__image-mail {
   fill: var(--form-text-color);
   bottom: 23px;
   position: absolute;
