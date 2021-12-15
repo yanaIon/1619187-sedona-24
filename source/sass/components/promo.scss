@@ -8,9 +8,11 @@
 .promo__wrapper {
   text-align: center;
   padding-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 
   @include tabletsAndDesktop {
-    width: 450px;
+    width: 485px;
     margin: 0 auto;
   }
 }

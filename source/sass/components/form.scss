@@ -41,9 +41,20 @@
 .form__label {
   display: flex;
   font-size: 14px;
+  position: relative;
 }
 
-.form__label span {
+.form__label--contacts {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: end;
+    column-gap: 18px;
+  }
+}
+
+.form__label-tel {
   @include desktop {
     position: absolute;
     opacity: 0;
@@ -60,10 +71,39 @@
   font-weight: bold;
   background-color: var(--form-bg-color);
   border: transparent;
+  outline: none;
 
   &:hover {
     background-color: var(--form-bg-hover-color);
   }
+
+  &:active {
+    background-color: var(--another-text-color);
+    border: 4px solid var(--form-bg-hover-color);
+  }
+}
+
+.form__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #e6e6e6;
+  width: 56px;
+  height: 56px;
+}
+
+.form__image-phone {
+  fill: var(--form-text-color);
+  bottom: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+.form__image-mail {
+  fill: var(--form-text-color);
+  bottom: 23px;
+  position: absolute;
+  right: 20px;
 }
 
 //form__introduce
@@ -141,8 +181,10 @@
 
   @include tablets {
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    justify-items: stretch;
     margin-bottom: 75px;
+    margin-right: 60px;
+    margin-left: 100px;
   }
 
   @include desktop {
@@ -179,4 +221,14 @@
   padding: 13px 23px 29px 21px;
   background-color: var(--form-bg-color);
   border: transparent;
+  outline: none;
+
+  &:hover {
+    background-color: var(--form-bg-hover-color);
+  }
+
+  &:active {
+    background-color: var(--another-text-color);
+    border: 4px solid var(--form-bg-hover-color);
+  }
 }
