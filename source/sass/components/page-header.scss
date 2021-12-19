@@ -10,3 +10,10 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.page-header__logo-image {
+  @include desktop {
+    width: 187px;
+    height: 97px;
+  }
+}

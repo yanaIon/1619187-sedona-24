@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <div class="container">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img src="img/logo.svg" width="102" height="84" alt="Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <img class="page-header__logo-image" src="img/logo.svg" alt="Седона" width="102" height="84">
+          </picture>
         </a>
         <!-- nav--nojs -->
         <nav class="nav nav--open">
@@ -47,9 +54,9 @@
       </header>
       <main class="page__main">
         <h1 class="visually-hidden">Каталог</h1>
-        <section class="intro">
+        <section class="intro intro--another-height">
           <h2 class="visually-hidden">Небольшой городок Седона</h2>
-            <img class ="intro__image" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
+            <img class ="intro__image intro__image--another-width" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
         </section>
         <section class="promo promo--catalog">
           <div class="promo__wrapper">
@@ -64,7 +71,11 @@
           <article class="article article--full-width">
             <figure class="article__content">
               <a class="article__content-link" href="#">
-                <img class="article__content-img" src="img/catalog/photo-1.jpg" alt="Неродные просторы" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                  <img class="article__content-img article__content-img--full-width" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile.jpg 1x, img/catalog/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы" width="280" height="280">
+                </picture>
               </a>
             <figcaption class="article__content-caption">
               <h3 class="article__content-title">Неродные просторы</h3>
@@ -81,7 +92,11 @@
           <article class="article">
             <figure class="article__content">
               <a class="article__content-link" href="#">
-                <img class="article__content-img" src="img/catalog/photo-2.jpg" alt="Местная растительность" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                  <img class="article__content-img" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile.jpg 1x, img/catalog/photo-2-mobile@2x.jpg 2x" alt="Местная растительность" width="280" height="280">
+                </picture>
               </a>
             <figcaption class="article__content-caption">
               <h3 class="article__content-title">Местная растительность</h3>
@@ -98,8 +113,12 @@
           <article class="article">
             <figure class="article__content">
               <a class="article__content-link" href="#">
-                <img class="article__content-img" src="img/catalog/photo-3.jpg" alt="Дорога на север" width="280" height="280">
-              </a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                  <img class="article__content-img" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile.jpg 1x, img/catalog/photo-3-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+                </picture>
+                </a>
             <figcaption class="article__content-caption article__content-caption--darker">
               <h3 class="article__content-title">Дорога на север</h3>
               <cite class="article__content-author" >Автор фото: Петр</cite>
@@ -115,8 +134,12 @@
           <article class="article">
             <figure class="article__content">
               <a class="article__content-link" href="#">
-                <img class="article__content-img" src="img/photo-bridge.jpg" alt="Мост дьявола" width="280" height="280">
-              </a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="article__content-img" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" width="280" height="280">
+                </picture>
+                </a>
             <figcaption class="article__content-caption">
               <h3 class="article__content-title">Мост дьявола</h3>
               <cite class="article__content-author" >Автор фото: Антон</cite>

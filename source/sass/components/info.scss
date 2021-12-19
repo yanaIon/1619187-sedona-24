@@ -5,6 +5,7 @@
   padding: 0;
   margin-left: 25px;
   margin-right: 45px;
+  row-gap: 26px;
 
   @include tabletsAndDesktop {
     display: grid;

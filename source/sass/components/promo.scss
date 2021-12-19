@@ -36,7 +36,7 @@
 .promo--catalog {
   border-bottom: var(--catalog-bg-color) 1px solid;
 
-  @include tablets {
+  @include tabletsAndDesktop {
     border-bottom: none;
   }
 }
