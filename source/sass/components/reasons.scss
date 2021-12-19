@@ -24,7 +24,7 @@
 }
 
 .reasons__header {
-  padding: 55px 20px 39px 18px;
+  padding: 55px 20px 25px 18px;
   text-align: center;
 }
 
@@ -34,7 +34,6 @@
 }
 
 .reasons__header--color-gray {
-  padding: 0;
   background-color: var(--reasons-color);
   border-bottom: #d6d6d6 1px solid;
 }
@@ -44,7 +43,6 @@
   font-weight: bold;
   margin: 0;
   margin-bottom: 20px;
-  padding-top: 25px;
 }
 
 .reasons__description {
@@ -70,6 +68,17 @@
 .reasons__image {
   @include tabletsAndDesktop {
     grid-column: span 2;
+  }
+}
+
+.reasons__image-photo {
+  @include tablets {
+    width: 512px;
+    height: 256px;
+  }
+
+  @include desktop {
+    width: 800px;
   }
 }
 

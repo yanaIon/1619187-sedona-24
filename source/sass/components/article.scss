@@ -33,6 +33,28 @@
   @include tabletsAndDesktop {
     margin-bottom: 0;
   }
+
+  @include tablets {
+    width: 324px;
+    height: 267px;
+  }
+
+  @include desktop {
+    width: 400px;
+    height: 267px;
+  }
+}
+
+.article__content-img--full-width {
+  @include tablets {
+    width: 648px;
+    height: 400px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    height: 400px;
+  }
 }
 
 .article__content-caption {
@@ -42,6 +64,9 @@
   @include tablets {
     grid-template-columns: 3fr 1fr;
     background-color: var(--figcaption-bg-color);
+    padding-left: 21px;
+    padding-top: 22px;
+    padding-bottom: 15px;
   }
 
   @include desktop {
@@ -51,6 +76,9 @@
     bottom: 0;
     background-color: rgb(0, 0, 0, 0.3);
     color: var(--another-text-color);
+    padding-left: 21px;
+    padding-top: 22px;
+    padding-bottom: 15px;
   }
 }
 
