@@ -35,6 +35,10 @@
       background-image: url("../img/back-desktop@2x.jpg");
     }
   }
+
+  @include desktop {
+    margin-bottom: 46px;
+  }
 }
 
 .intro--another-height {
@@ -42,10 +46,12 @@
 
   @include tablets {
     min-height: 290px;
+    margin-bottom: 47px;
   }
 
   @include desktop {
     min-height: 300px;
+    margin-bottom: 100px;
   }
 }
 

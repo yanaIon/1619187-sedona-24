@@ -2,6 +2,7 @@
   display: grid;
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: 50px;
   row-gap: 45px;
 
   @include tabletsAndDesktop {
@@ -35,7 +36,11 @@
   text-align: center;
   font-size: 18px;
   margin: 0;
-  margin-bottom: 20px;
+
+  @include tabletsAndDesktop {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
 }
 
 .form__label {
@@ -113,7 +118,7 @@
   justify-items: stretch;
 
   @include tabletsAndDesktop {
-    margin-bottom: 72px;
+    margin-bottom: 74px;
   }
 }
 
@@ -132,7 +137,7 @@
 
   @include tabletsAndDesktop {
     grid-column: 1/-1;
-    margin-bottom: 51px;
+    margin-bottom: 37px;
   }
 
   @include desktop {
@@ -159,7 +164,7 @@
 //impression
 .form__impression {
   display: grid;
-  gap: 43px;
+  gap: 25px;
 
   @include tabletsAndDesktop {
     grid-row: 1/2;
@@ -176,13 +181,13 @@
 //sight-visited
 .form__sights-visited {
   display: grid;
-  gap: 24px;
+  gap: 32px;
   grid-column: 1/-1;
 
   @include tablets {
     grid-template-columns: repeat(2, 1fr);
     justify-items: stretch;
-    margin-bottom: 75px;
+    margin-bottom: 67px;
     margin-right: 60px;
     margin-left: 100px;
   }
@@ -209,7 +214,7 @@
 .form__emotions {
   @include tabletsAndDesktop {
     grid-column: 1/-1;
-    margin-bottom: 58px;
+    margin-bottom: 50px;
   }
 }
 
@@ -222,6 +227,7 @@
   background-color: var(--form-bg-color);
   border: transparent;
   outline: none;
+  margin-top: 20px;
 
   &:hover {
     background-color: var(--form-bg-hover-color);
