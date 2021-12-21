@@ -28,6 +28,7 @@
 }
 
 .article__content-img {
+  background-color: var(--bg-color-image);
   margin-bottom: 11px;
 
   @include tabletsAndDesktop {
