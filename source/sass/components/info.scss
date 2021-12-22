@@ -1,11 +1,11 @@
 .info {
   display: grid;
-  margin-top: 26px;
+  margin-top: 33px;
   margin-bottom: 35px;
   padding: 0;
-  margin-left: 25px;
-  margin-right: 45px;
-  row-gap: 26px;
+  margin-left: 20px;
+  margin-right: 35px;
+  row-gap: 20px;
 
   @include tabletsAndDesktop {
     display: grid;
@@ -14,6 +14,8 @@
     text-align: center;
     margin-left: 37px;
     margin-right: 37px;
+    margin-top: 57px;
+    margin-bottom: 56px;
   }
 }
 
@@ -23,6 +25,7 @@
     grid-template-columns: 37px auto;
     align-items: center;
     column-gap: 11px;
+    row-gap: 10px;
   }
 
   &::before {
@@ -42,6 +45,7 @@
     row-gap: 26px;
     justify-items: center;
     grid-template-rows: 75px 26px auto;
+    padding-right: 60px;
 
     &::before {
       width: 72px;
@@ -56,6 +60,7 @@
     grid-template-columns: 37px auto;
     align-items: center;
     column-gap: 11px;
+    row-gap: 10px;
   }
 
   &::before {
@@ -76,9 +81,10 @@
     row-gap: 26px;
     justify-items: center;
     grid-template-rows: 75px 26px auto;
+    padding-left: 34px;
 
     &::before {
-      width: 72px;
+      width: 64px;
       height: 75px;
     }
   }
@@ -90,6 +96,7 @@
     grid-template-columns: 37px auto;
     align-items: center;
     column-gap: 11px;
+    row-gap: 10px;
   }
 
   &::before {
@@ -111,10 +118,12 @@
     row-gap: 26px;
     justify-items: center;
     grid-template-rows: 75px 26px auto;
+    padding-right: 40px;
+    padding-left: 35px;
 
     &::before {
-      width: 64px;
-      height: 75px;
+      width: 68px;
+      height: 76px;
     }
   }
 }
@@ -123,10 +132,15 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0;
+
+  @include tabletsAndDesktop {
+    font-size: 21px;
+  }
 }
 
 .info__item-description {
   margin: 0;
   font-size: 14px;
+  line-height: 21/14*1;
   grid-column: 2/-1;
 }

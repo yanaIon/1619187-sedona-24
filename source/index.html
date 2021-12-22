@@ -59,7 +59,7 @@
           <h2 class="visually-hidden">Небольшой городок Седона</h2>
             <img class ="intro__image" src="img/intro.svg" alt="Седона" width="282" height="214">
         </section>
-        <section class="promo">
+        <section class="promo promo--main">
           <div class="promo__wrapper">
             <h2 class="promo__title">
               Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -77,6 +77,10 @@
                 </div>
                 <div class="reasons__image">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
                     <img class="reasons__image-photo" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile.jpg 1x, img/photo-city-mobile@2x.jpg 2x" alt="Фото города" width="320" height="260">
@@ -101,31 +105,35 @@
               <div class="reasons__header reasons__header--color-blue reasons__header--reverse">
                 <h3 class="reasons__title">Там есть мост дьявола</h3>
                 <p class="reasons__number">№2</p>
-                <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="reasons__description reasons__description--reverse">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="reasons__image reasons__image--reverse">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                   <img class="reasons__image-photo" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" width="320" height="260">
                 </picture>
               </div>
             </li>
-            <li class="reasons__item">
+            <li class="reasons__item reasons__item--color-gray">
               <div class="reasons__header reasons__header--color-gray">
                 <h3 class="reasons__title">Небольшая площадь</h3>
                 <p class="reasons__number">№3</p>
                 <p class="reasons__description">Все интересные места находятся очень близко</p>
               </div>
             </li>
-            <li class="reasons__item">
+            <li class="reasons__item reasons__item--color-gray">
               <div class="reasons__header reasons__header--color-gray">
                 <h3 class="reasons__title">Красивая дорога</h3>
                 <p class="reasons__number">№4</p>
                 <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
-            <li class="reasons__item">
+            <li class="reasons__item reasons__item--color-gray">
               <div class="reasons__header reasons__header--color-gray">
                 <h3 class="reasons__title">Мало туристов</h3>
                 <p class="reasons__number">№5</p>
@@ -174,7 +182,7 @@
           </ul>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" area-label="Сайт HTML Academy">
             <svg class="copyright__link-image" width = "27" height= "34">
               <use xlink:href="img/icon/sprite.svg#htmlacademy"></use>
             </svg>

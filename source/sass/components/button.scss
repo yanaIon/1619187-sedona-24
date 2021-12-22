@@ -27,6 +27,10 @@
   &:disabled {
     background-color: var(--disabled-bg-color);
   }
+
+  @include tabletsAndDesktop {
+    width: 100%;
+  }
 }
 
 .button-disabled {
