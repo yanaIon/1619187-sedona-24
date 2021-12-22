@@ -154,15 +154,37 @@
             </figure>
           </article>
         </section>
-        <section class="promo promo--catalog">
+        <section class="promo promo--catalog promo--catalog-video">
           <div class="promo__wrapper">
             <h2 class="promo__title promo__title--catalog">
               Вы еще сомневаетесь?
             </h2>
             <p class="promo__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
-          <video class="promo__video" controls preload="metadata" width="320" height="201" poster="img/catalog/video.jpg">
-          </video>
+          <div class="promo__video">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="iimg/video-desktop.jpg 1x, img/video-desktop.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet.jpg 2x">
+              <img class="promo__video-img" src="img/video-mobile.jpg" srcset="img/video-mobile.jpg 1x, img/video-mobile.jpg 2x" alt="Видео" width="320" height="201">
+            </picture>
+            <div class="promo__video-controls controls">
+              <button class="controls__button controls__button-replay" type="button">
+                <svg width = "16" height="20">
+                  <use href="img/icon/sprite.svg#replay"></use>
+                </svg>
+              </button>
+              <button class="controls__button controls__button-sub" type="button">
+                <svg width = "32" height="20">
+                  <use href="img/icon/sprite.svg#subtitles"></use>
+                </svg>
+              </button>
+              <button class="controls__button controls__button-screen" type="button">
+                <svg width = "20" height="20">
+                  <use href="img/icon/sprite.svg#fullscreen"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
@@ -192,7 +214,7 @@
           </ul>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" area-label="Сайт HTML Academy">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" area-label="Сайт HTML Academy.">
             <svg class="copyright__link-image" width = "27" height= "34">
               <use xlink:href="img/icon/sprite.svg#htmlacademy"></use>
             </svg>

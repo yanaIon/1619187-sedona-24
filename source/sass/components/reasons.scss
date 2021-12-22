@@ -37,7 +37,7 @@
   text-align: center;
 
   @include tabletsAndDesktop {
-    padding: 38px 27px 25px 18px;
+    padding: 40px 27px 25px 18px;
   }
 }
 
@@ -47,8 +47,6 @@
 }
 
 .reasons__header--color-gray {
-  //background-color: var(--reasons-color);
-  //border-bottom: #d6d6d6 1px solid;
   padding: 26px 35px 14px 29px;
 
   @include tablets {
