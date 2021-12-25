@@ -9,7 +9,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <div class="container">
@@ -25,8 +25,8 @@
         <nav class="nav nav--open">
           <button class="nav__toggle nav__toggle--open" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
             <svg class="nav__icon" aria-hidden="true" width = "23" height="23">
-              <use class="nav__icon-menu" href="img/icon/sprite.svg#icon-menu"></use>
-              <use class="nav__icon-cross" href="img/icon/sprite.svg#icon-cross"></use>
+              <use class="nav__icon-menu" href="img/sprite.svg#icon-menu"></use>
+              <use class="nav__icon-cross" href="img/sprite.svg#icon-cross"></use>
             </svg>
           </button>
           <ul class="nav__list nav__list--open" id="nav__list">
@@ -73,6 +73,10 @@
             <figure class="article__content">
               <a class="article__content-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-1-mobile.webp 1x, img/catalog/photo-1-mobile@2x.webp 2x" >
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
                   <img class="article__content-img article__content-img--full-width" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile.jpg 1x, img/catalog/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы" width="280" height="280">
@@ -94,6 +98,10 @@
             <figure class="article__content">
               <a class="article__content-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-2-mobile.webp 1x, img/catalog/photo-2-mobile@2x.webp 2x" >
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
                   <img class="article__content-img" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile.jpg 1x, img/catalog/photo-2-mobile@2x.jpg 2x" alt="Местная растительность" width="280" height="280">
@@ -115,6 +123,10 @@
             <figure class="article__content">
               <a class="article__content-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-3-mobile.webp 1x, img/catalog/photo-3-mobile@2x.webp 2x" >
+
                   <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
                   <img class="article__content-img" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile.jpg 1x, img/catalog/photo-3-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
@@ -136,6 +148,10 @@
             <figure class="article__content">
               <a class="article__content-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                   <img class="article__content-img" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" width="280" height="280">
@@ -154,15 +170,41 @@
             </figure>
           </article>
         </section>
-        <section class="promo promo--catalog">
+        <section class="promo promo--catalog promo--catalog-video">
           <div class="promo__wrapper">
             <h2 class="promo__title promo__title--catalog">
               Вы еще сомневаетесь?
             </h2>
             <p class="promo__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
-          <video class="promo__video" controls preload="metadata" width="320" height="201" poster="img/catalog/video.jpg">
-          </video>
+          <div class="promo__video">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="iimg/video-desktop.webp 1x, img/video-desktop.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="iimg/video-desktop.jpg 1x, img/video-desktop.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet.jpg 2x">
+              <img class="promo__video-img" src="img/video-mobile.jpg" srcset="img/video-mobile.jpg 1x, img/video-mobile.jpg 2x" alt="Видео" width="320" height="201">
+            </picture>
+            <div class="promo__video-controls controls">
+              <button class="controls__button controls__button-replay" type="button">
+                <svg width = "16" height="20">
+                  <use href="img/sprite.svg#replay"></use>
+                </svg>
+              </button>
+              <button class="controls__button controls__button-sub" type="button">
+                <svg width = "32" height="20">
+                  <use href="img/sprite.svg#subtitles"></use>
+                </svg>
+              </button>
+              <button class="controls__button controls__button-screen" type="button">
+                <svg width = "20" height="20">
+                  <use href="img/sprite.svg#fullscreen"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
@@ -170,50 +212,36 @@
           <ul class="page-footer__social social">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                <svg class="social__link-image" width = "20" height = "14" fill = "#ffffff">
-                  <use href="img/icon/sprite.svg#icon-twitter"></use>
+                <svg class="social__link-image" width = "18" height = "15" fill = "#ffffff">
+                  <use href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                <svg class="social__link-image" width = "20" height = "14" fill = "#ffffff">
-                  <use href="img/icon/sprite.svg#icon-facebook"></use>
+                <svg class="social__link-image" width = "9" height = "19" fill = "#ffffff">
+                  <use href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#">
                 <svg class="social__link-image" width = "20" height = "14" fill = "#ffffff">
-                  <use href="img/icon/sprite.svg#icon-youtube"></use>
+                  <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
           </ul>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" area-label="Сайт HTML Academy">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" area-label="Сайт HTML Academy.">
             <svg class="copyright__link-image" width = "27" height= "34">
-              <use xlink:href="img/icon/sprite.svg#htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </footer>
     </div>
-    <script>
-      (() => {
-        const menu = document.querySelector('.nav');
-        const menuButton = document.querySelector('.nav__toggle');
-        const menuList = document.querySelector('.nav__list');
-
-        menuButton.addEventListener('click', () => {
-          let expanded = menuButton.getAttribute('aria-expanded') === 'true' || 'false';
-          menuButton.setAttribute('aria-expanded', !expanded);
-          menuButton.classList.toggle('nav__toggle--open');
-          menuList.classList.toggle('nav__list--open');
-          menu.classList.toggle('nav--open')
-        });
-      }) ();
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

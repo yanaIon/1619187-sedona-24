@@ -1,0 +1,53 @@
+.controls__button {
+  display: block;
+  border: none;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.controls__button svg {
+  fill: var(--video-controls-btn);
+
+  &:hover {
+    fill: var(--video-controls-btn-hover);
+  }
+
+  &:active {
+    fill: var(--video-controls-btn-hover);
+    opacity: 0.3;
+  }
+
+  @include tabletsAndDesktop {
+    fill: var(--another-bg-color);
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.controls__button-replay {
+  margin-left: 15px;
+
+  @include tabletsAndDesktop {
+    margin-left: 35px;
+  }
+}
+
+.controls__button-screen {
+  @include tabletsAndDesktop {
+    margin-left: 30px;
+  }
+}
+
+.controls__button-sub {
+  @include tabletsAndDesktop {
+    margin-left: 40px;
+  }
+}

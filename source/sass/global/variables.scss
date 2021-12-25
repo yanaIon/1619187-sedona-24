@@ -2,7 +2,7 @@
 $mobile-low: 320px;
 $desktop-low: 1200px;
 $tablets-low: 768px;
-$tablets-high: 1200px;
+$tablets-high: 1199px;
 
 //colors
 :root {
@@ -17,6 +17,9 @@ $tablets-high: 1200px;
   --gray-lighter: #eeeeee;
   --gray: #f2f2f2;
   --gray-darker: #e5e5e5;
+  --dark-gray: #333333;
+  --gray-mid: #5c6870;
+
 
   --another-text-color: var(--white);
   --another-bg-color: var(--white);
@@ -38,6 +41,8 @@ $tablets-high: 1200px;
   --figcaption-bg-color: var(--gray);
   --disabled-bg-color: var(--gray-darker);
   --bg-color-image: var(--brown);
+  --video-controls-btn-hover: var(--dark-gray);
+  --video-controls-btn: var(--gray-mid);
 }
 
 //colors
