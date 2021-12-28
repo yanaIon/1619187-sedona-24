@@ -30,14 +30,11 @@
 
   @include tabletsAndDesktop {
     min-height: 518px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: image-set(
-        url("../img/back.webp") 1x,
-        url("../img/back-desktop@2x.webp") 2x,
-        url("../img/back.jpg") 1x,
-        url("../img/back-desktop@2x.jpg") 2x);
-    }
+    background-image: image-set(
+      url("../img/back.webp") 1x,
+      url("../img/back-desktop@2x.webp") 2x,
+      url("../img/back.jpg") 1x,
+      url("../img/back-desktop@2x.jpg") 2x);
   }
 
   @include desktop {
