@@ -3,17 +3,17 @@
   align-items: center;
   justify-content: center;
   background-color: var(--main-bg-color);
-  background-image: url("../img/back.jpg");
+  background-image: image-set(
+    url("../img/back.webp") 1x,
+    url("../img/back-mobile@2x.webp") 2x,
+    url("../img/back.jpg") 1x,
+    url("../img/back-mobile@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 32px;
   min-height: 389px;
   position: relative;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@2x.jpg");
-  }
 
   &::after {
     position: absolute;
@@ -32,7 +32,11 @@
     min-height: 518px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop@2x.jpg");
+      background-image: image-set(
+        url("../img/back.webp") 1x,
+        url("../img/back-desktop@2x.webp") 2x,
+        url("../img/back.jpg") 1x,
+        url("../img/back-desktop@2x.jpg") 2x);
     }
   }
 
