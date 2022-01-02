@@ -3,7 +3,6 @@
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 50px;
-  row-gap: 45px;
 
   @include tabletsAndDesktop {
     row-gap: 0;
@@ -23,10 +22,19 @@
   }
 }
 
+.form section {
+  @include mobile {
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-bottom: var(--form-bg-hover-color) 1px solid;
+  }
+}
+
 .form__required {
   display: none;
 
   @include tabletsAndDesktop {
+    font-size: 14px;
     display: inline-flex;
     justify-content: flex-end;
   }
@@ -40,6 +48,30 @@
   @include tabletsAndDesktop {
     font-size: 21px;
     margin-bottom: 30px;
+  }
+}
+
+
+.form__header--withBorder {
+  @include tabletsAndDesktop {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      border-bottom: var(--form-bg-hover-color) 1px solid;
+      flex-grow: 1;
+      margin-right: 47px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: var(--form-bg-hover-color) 1px solid;
+      flex-grow: 1;
+      margin-left: 47px;
+    }
   }
 }
 
@@ -117,8 +149,20 @@
   gap: 20px;
   justify-items: stretch;
 
-  @include tabletsAndDesktop {
+  @include tablets {
+    margin-left: 57px;
     margin-bottom: 74px;
+  }
+
+  @include desktop {
+    margin-left: 78px;
+    margin-bottom: 50px;
+  }
+}
+
+.form__introduce .form__header {
+  @include tabletsAndDesktop {
+    text-align: start;
   }
 }
 
@@ -133,19 +177,25 @@
 //contacts
 .form__contacts {
   display: grid;
-  gap: 15px;
+  row-gap: 21px;
 
   @include tabletsAndDesktop {
     grid-column: 1/-1;
-    margin-bottom: 37px;
+    margin-bottom: 53px;
   }
 
   @include desktop {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 22px;
+    row-gap: 30px;
   }
 }
 
 .form__contacts .form__header {
+  @include tablets {
+    margin-bottom: 0;
+  }
+
   @include desktop {
     grid-column: 1/-1;
   }
@@ -168,7 +218,18 @@
 
   @include tabletsAndDesktop {
     grid-row: 1/2;
+    border-right: var(--form-bg-hover-color) 1px solid;
     margin-bottom: 72px;
+  }
+
+  @include desktop {
+    margin-bottom: 45px;
+  }
+}
+
+.form__impression .form__header {
+  @include tablets {
+    text-align: start;
   }
 }
 
@@ -195,6 +256,7 @@
   @include desktop {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 75px;
+    gap: 10px;
   }
 }
 
@@ -212,6 +274,8 @@
 
 //emotions
 .form__emotions {
+  border: none;
+
   @include tabletsAndDesktop {
     grid-column: 1/-1;
     margin-bottom: 50px;

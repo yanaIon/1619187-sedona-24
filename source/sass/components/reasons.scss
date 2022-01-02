@@ -13,13 +13,14 @@
 }
 
 .reasons__list {
+  counter-reset: list1; /* Инициируем счетчик */
   padding: 0;
   margin-bottom: 33px;
 
   @include tabletsAndDesktop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 }
 
@@ -33,12 +34,21 @@
 }
 
 .reasons__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 45px 20px 25px 18px;
   text-align: center;
 
   @include tabletsAndDesktop {
     padding: 40px 27px 25px 18px;
   }
+}
+
+.reasons__header::before {
+  counter-increment: list1; /* Увеличиваем значение счетчика */
+  content: "-""№" counter(list1) "-"; /* Выводим число */
+  margin-bottom: 7px;
 }
 
 .reasons__header--color-blue {
@@ -59,6 +69,7 @@
 }
 
 .reasons__title {
+  order: -1;
   font-size: 18px;
   font-weight: bold;
   margin: 0;
