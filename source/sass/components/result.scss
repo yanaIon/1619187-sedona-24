@@ -3,15 +3,25 @@
   //display: flex;
   flex-direction: column;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: var(--another-bg-color);
+  width: 320px;
+  height: 323px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 117px;
 
   @include tabletsAndDesktop {
-    max-width: 640px;
-    margin: 0 auto;
+    width: 640px;
+    min-height: 347px;
+    top: 162px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .result__desc {
-  padding: 38px 39px 29px 37px;
+  padding: 38px 39px 42px 37px;
   text-align: center;
 }
 
@@ -19,11 +29,19 @@
   margin: 0;
   padding-bottom: 38px;
   font-size: 18px;
+
+  @include tabletsAndDesktop {
+    font-size: 30px;
+  }
 }
 
 .result__text {
   margin: 0;
   font-size: 14px;
+
+  @include tabletsAndDesktop {
+    padding: 0 75px;
+  }
 }
 
 .result__button-wrapper {
@@ -31,4 +49,15 @@
   height: 98px;
   background-color: var(--form-bg-color);
   display: flex;
+
+  @include tabletsAndDesktop {
+    height: 146px;
+  }
+}
+
+.button--result {
+  @include tabletsAndDesktop {
+    width: 458px;
+    height: 58px;
+  }
 }
