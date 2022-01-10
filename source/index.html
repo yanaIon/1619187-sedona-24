@@ -16,7 +16,7 @@
   <body class="page-body">
     <div class="container">
       <header class="page-header">
-        <a class="page-header__logo">
+        <a class="page-header__logo" aria-label="Ссылка на главную страницу.">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -24,14 +24,14 @@
           </picture>
         </a>
         <!-- nav--nojs -->
-        <nav class="nav nav--open">
-          <button class="nav__toggle nav__toggle--open" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
+        <nav class="nav">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
             <svg class="nav__icon" aria-hidden="true" width = "23" height="23">
               <use class="nav__icon-menu" href="img/sprite.svg#icon-menu"></use>
               <use class="nav__icon-cross" href="img/sprite.svg#icon-cross"></use>
             </svg>
           </button>
-          <ul class="nav__list nav__list--open" id="nav__list">
+          <ul class="nav__list" id="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="#">
                 Главная
@@ -142,7 +142,7 @@
         <section class="search">
           <h2 class="search__title">Заинтересовались?</h2>
           <p class="search__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-          <a class="button" href="#">Найти гостиницу</a>
+          <a class="button" href="#" aria-label="Кнопка поиска гостиницы.">Найти гостиницу</a>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
@@ -159,21 +159,21 @@
         <div class="page-footer__hashtag">#visitsedona</div>
           <ul class="page-footer__social social">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
+              <a class="social__link social__link--twitter" href="#" aria-label="Страница города в Твиттере.">
                 <svg class="social__link-image" width = "18" height = "15" fill = "#ffffff">
                   <use href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
+              <a class="social__link social__link--facebook" href="#" aria-label="Страница города на Фейсбуке.">
                 <svg class="social__link-image" width = "9" height = "19" fill = "#ffffff">
                   <use href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
+              <a class="social__link social__link--youtube" href="#" aria-label="Канал города на ютубе.">
                 <svg class="social__link-image" width = "20" height = "14" fill = "#ffffff">
                   <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
