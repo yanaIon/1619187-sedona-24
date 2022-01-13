@@ -20,9 +20,14 @@
   font-weight: bold;
   margin-bottom: 17px;
 
-  @include tabletsAndDesktop {
-    font-size: 30px;
+  @include tablets {
     margin: 0 0 23px;
+    font-size: 30px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    margin: 0 0 29px;
   }
 }
 
@@ -31,14 +36,18 @@
   margin-bottom: 27px;
   font-size: 14px;
   line-height: 24/14*1;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 29px;
+  margin-left: 29px;
 
   @include tablets {
-    margin-bottom: 12px;
+    margin-right: 39px;
+    margin-left: 0;
+    margin-bottom: 38px;
   }
 
   @include desktop {
-    margin-bottom: 22px;
+    margin-right: 39px;
+    margin-left: 0;
+    margin-bottom: 42px;
   }
 }

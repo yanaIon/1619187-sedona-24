@@ -7,7 +7,7 @@
   @include tabletsAndDesktop {
     font-size: 14px;
     padding-top: 14px;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     background-color: var(--another-bg-color);
   }
 }
@@ -166,11 +166,19 @@
   }
 
   .nav--nojs .nav__list {
+    display: grid;
     position: static;
     min-height: 0;
   }
 
   .nav--nojs .nav__item {
     display: block;
+  }
+
+  .nav--nojs {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--main-bg-color);
   }
 }

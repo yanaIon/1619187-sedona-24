@@ -23,15 +23,17 @@
             <img class="page-header__logo-image" src="img/logo.svg" alt="Седона" width="102" height="84">
           </picture>
         </a>
-        <!-- nav--nojs -->
-        <nav class="nav nav--open">
-          <button class="nav__toggle nav__toggle--open" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
+        <!-- nav--open, nav--nojs  -->
+        <nav class="nav">
+          <!-- nav__toggle--open -->
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
             <svg class="nav__icon" aria-hidden="true" width = "23" height="23">
               <use class="nav__icon-menu" href="img/sprite.svg#icon-menu"></use>
               <use class="nav__icon-cross" href="img/sprite.svg#icon-cross"></use>
             </svg>
           </button>
-          <ul class="nav__list nav__list--open" id="nav__list">
+          <!-- nav__list--open -->
+          <ul class="nav__list" id="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="index.html">
                 Главная
@@ -57,37 +59,37 @@
       </header>
       <main class="page__main">
         <h1 class="visually-hidden">Отзывы</h1>
-        <section class="intro intro--another-height">
+        <section class="intro intro--another-height intro--form">
           <h2 class="visually-hidden">Небольшой городок Седона</h2>
             <img class ="intro__image intro__image--another-width" src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
         </section>
         <section class="promo promo--form">
-          <div class="promo__wrapper">
+          <div class="promo__wrapper promo__wrapper--form">
             <h2 class="promo__title promo__title--form">
               Оставьте свой отзыв
             </h2>
-            <p class="promo__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <p class="promo__intro promo__intro--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
         </section>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <section class="form__introduce">
             <h3 class="form__header">Представьтесь:</h3>
               <label class="form__label">
-                Имя<sup>*</sup>:<input class="form__input" type="text" name="name" placeholder="Петр" aria-label="Введите имя" required>
+                Имя<sup>*</sup>:<input class="form__input" type="text" name="name" placeholder="Петр" required>
               </label>
               <label class="form__label">
-                Фамилия<sup>*</sup>:<input class="form__input" type="text" name="surname"  placeholder="Иванов" aria-label="Введите фамилию" required>
+                Фамилия<sup>*</sup>:<input class="form__input" type="text" name="surname"  placeholder="Иванов" required>
               </label>
               <label class="form__label">
-                Отчество:<input class="form__input" type="text" name="patronymic" placeholder="Александрович"  aria-label="Введите отчество" >
+                Отчество:<input class="form__input" type="text" name="patronymic" placeholder="Александрович">
               </label>
           </section>
           <section class="form__contacts">
             <h3 class="form__header form__header--withBorder">Контактная информация:</h3>
               <label class="form__label form__label--contacts">
-                <span><span class="form__label-tel">Контактный </span>телефон:</span>
+                <span class="form__label-details"><span class="form__label-tel">Контактный </span>телефон*:</span>
                 <span class="form__tel">
-                  <input class="form__input form__input--tel" type="tel" name="tel" placeholder="Введите телефон" aria-label="Введите номер телефона" required >
+                  <input class="form__input form__input--tel" type="tel" name="tel" placeholder="Введите телефон" required >
                   <span class="form__image">
                     <svg class="form__image-phone" width="18" height="18">
                       <use xlink:href="img/sprite.svg#phone"></use>
@@ -96,9 +98,9 @@
                 </span>
               </label>
               <label class="form__label form__label--contacts">
-                Электронная почта:
+                <span class="form__label-details">Электронная почта*:</span>
                 <span class="form__mail">
-                  <input class="form__input form__input--mail" type="email" name="email"  placeholder="Введите e-mail"  aria-label="Введите электронную почту" required>
+                  <input class="form__input form__input--mail" type="email" name="email"  placeholder="Введите e-mail" required>
                   <span class="form__image">
                     <svg class="form__image-mail" width="16" height="12">
                       <use xlink:href="img/sprite.svg#mail"></use>

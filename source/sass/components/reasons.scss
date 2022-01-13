@@ -41,30 +41,39 @@
   text-align: center;
 
   @include tabletsAndDesktop {
-    padding: 25px 27px 25px 18px;
+    padding: 35px 27px 25px 18px;
   }
 }
 
 .reasons__header::before {
   counter-increment: list1; /* Увеличиваем значение счетчика */
   content: "-""№" counter(list1) "-"; /* Выводим число */
-  margin-bottom: 7px;
+  margin-bottom: 12px;
+
+  @include tabletsAndDesktop {
+    margin-bottom: 7px;
+  }
 }
 
 .reasons__header--color-blue {
   background-color: var(--main-bg-color);
   color: var(--another-text-color);
+  padding-top: 56px;
+
+  @include tabletsAndDesktop {
+    padding-top: 35px;
+  }
 }
 
 .reasons__header--color-gray {
-  padding: 26px 35px 14px 29px;
+  padding: 23px 35px 14px 29px;
 
   @include tablets {
-    padding: 41px 35px 35px 21px;
+    padding: 43px 35px 35px 21px;
   }
 
   @include desktop {
-    padding: 34px 35px 50px 21px;
+    padding: 36px 35px 50px 21px;
   }
 }
 
@@ -136,6 +145,7 @@
 
   @include desktop {
     width: 800px;
+    height: 256px;
   }
 }
 
@@ -147,6 +157,8 @@
 }
 
 .reasons__header--reverse {
+  padding-top: 38px;
+
   @include tabletsAndDesktop {
     grid-column: -1 / -2;
   }

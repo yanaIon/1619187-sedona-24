@@ -40,8 +40,18 @@
 .button--error {
   width: 180px;
   font-size: 18px;
+
+  @include tabletsAndDesktop {
+    width: 272px;
+  }
 }
 
 .button--result {
   font-size: 18px;
+
+  @include tabletsAndDesktop {
+    width: 458px;
+    height: 58px;
+    font-size: 21px;
+  }
 }

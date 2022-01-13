@@ -2,7 +2,7 @@
   display: grid;
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 
   @include tabletsAndDesktop {
     row-gap: 0;
@@ -18,13 +18,13 @@
   @include desktop {
     margin-right: 120px;
     margin-left: 120px;
-    margin-bottom: 61px;
+    margin-bottom: 64px;
   }
 }
 
 .form section {
   @include mobile {
-    padding-bottom: 22px;
+    padding-bottom: 25px;
     margin-bottom: 18px;
     border-bottom: var(--form-bg-hover-color) 1px solid;
   }
@@ -37,6 +37,7 @@
     font-size: 14px;
     display: inline-flex;
     justify-content: flex-end;
+    margin-top: 22px;
   }
 }
 
@@ -79,6 +80,14 @@
   display: flex;
   font-size: 14px;
   position: relative;
+}
+
+.form__label-details {
+  margin-left: 22px;
+
+  @include desktop {
+    margin-left: 0;
+  }
 }
 
 .form__input {
@@ -141,13 +150,14 @@
 
   @include tabletsAndDesktop {
     grid-column: 1/-1;
-    margin-bottom: 53px;
+    margin-bottom: 58px;
   }
 
   @include desktop {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 22px;
     row-gap: 30px;
+    margin-bottom: 47px;
   }
 }
 
@@ -258,12 +268,11 @@
   @include tablets {
     justify-items: stretch;
     margin-bottom: 67px;
-    gap: 0;
+    row-gap: 11px;
   }
 
   @include desktop {
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 75px;
+    margin-bottom: 71px;
     gap: 10px;
   }
 }
@@ -271,7 +280,7 @@
 .form__check {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  row-gap: 34px;
+  row-gap: 29px;
 
   @include tablets {
     display: grid;
@@ -279,6 +288,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 42px;
+    column-gap: 53px;
     margin: 0 auto;
   }
 
@@ -308,7 +318,7 @@
 
   @include tabletsAndDesktop {
     grid-column: 1/-1;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 }
 
@@ -317,7 +327,7 @@
   color: var(--form-text-color);
   font-size: 18px;
   font-weight: bold;
-  padding: 13px 23px 29px 21px;
+  padding: 18px 23px 29px 21px;
   background-color: var(--form-bg-color);
   border: transparent;
   outline: none;

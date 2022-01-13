@@ -6,7 +6,7 @@
   position: relative;
 
   @include tablets {
-    margin: 0 auto 31px;
+    margin: 0 auto 29px;
   }
 
   @include desktop {
@@ -28,23 +28,24 @@
 
 .promo--catalog {
   border-bottom: var(--catalog-bg-color) 1px solid;
+  margin: 0 auto 18px;
 
   @include tabletsAndDesktop {
     border-bottom: none;
-    margin: 0 auto 49px;
+    margin: 16px auto 52px;
   }
 }
 
 .promo--catalog-video {
   border-bottom: none;
-  margin: 0 auto 16px;
+  margin: 0 auto 20px;
 
   @include tablets {
-    margin: 0 auto 35px;
+    margin: 0 auto 43px;
   }
 
   @include desktop {
-    margin: 0 auto 45px;
+    margin: 0 auto 51px;
   }
 }
 
@@ -67,13 +68,28 @@
 
 .promo__wrapper {
   text-align: center;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
   margin-right: 25px;
   margin-left: 25px;
 
   @include tabletsAndDesktop {
     width: 485px;
     margin: 0 auto;
+    padding-bottom: 24px;
+  }
+}
+
+.promo__wrapper--form {
+  padding-bottom: 22px;
+
+  @include mobile {
+    margin-right: 21px;
+  }
+}
+
+.promo__wrapper--main {
+  @include mobile {
+    padding-bottom: 4px;
   }
 }
 
@@ -81,14 +97,17 @@
   margin: 0;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @include tabletsAndDesktop {
     font-size: 21px;
+    margin-bottom: 25px;
   }
 }
 
 .promo__title--catalog {
+  margin: 0 0 24px;
+
   @include tabletsAndDesktop {
     font-size: 30px;
   }
@@ -104,6 +123,13 @@
   margin: 0;
   font-size: 14px;
   line-height: 26/14*1;
+}
+
+.promo__intro--form {
+  @include tabletsAndDesktop {
+    margin-left: 21px;
+    margin-right: 21px;
+  }
 }
 
 .promo__video {
@@ -133,6 +159,8 @@
 }
 
 .promo__video-img {
+  background-color: var(--bg-color-image);
+
   @include tablets {
     width: 648px;
     height: 500px;
