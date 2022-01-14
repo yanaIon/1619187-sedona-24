@@ -36,3 +36,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.radio__input:focus + .radio__box {
+  background-color: var(--form-bg-hover-color);
+}

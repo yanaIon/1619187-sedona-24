@@ -10,26 +10,30 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page-body">
     <div class="container">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html">
+        <a class="page-header__logo" href="index.html" aria-label="Ссылка на главную страницу.">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
             <img class="page-header__logo-image" src="img/logo.svg" alt="Седона" width="102" height="84">
           </picture>
         </a>
-        <!-- nav--nojs -->
-        <nav class="nav nav--open">
-          <button class="nav__toggle nav__toggle--open" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
+        <!-- nav--open, nav--nojs  -->
+        <nav class="nav">
+          <!-- nav__toggle--open -->
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
             <svg class="nav__icon" aria-hidden="true" width = "23" height="23">
               <use class="nav__icon-menu" href="img/sprite.svg#icon-menu"></use>
               <use class="nav__icon-cross" href="img/sprite.svg#icon-cross"></use>
             </svg>
           </button>
-          <ul class="nav__list nav__list--open" id="nav__list">
+          <!-- nav__list--open -->
+          <ul class="nav__list" id="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="index.html">
                 Главная
@@ -71,7 +75,7 @@
           <h2 class="visually-hidden">Каталог фото</h2>
           <article class="article article--full-width">
             <figure class="article__content">
-              <a class="article__content-link" href="#">
+              <a class="article__content-link" href="#" aria-label="фото: Неродные просторы">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x">
@@ -85,18 +89,18 @@
             <figcaption class="article__content-caption">
               <h3 class="article__content-title">Неродные просторы</h3>
               <cite class="article__content-author" >Автор фото: Борис</cite>
-              <button class="like" type="button">
-                <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              <button class="like" type="button" aria-label="Поставить лайк">
+                <svg width="23" height="21">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
-                <span class="likes-number">1350</span>
+                <span class="like__number">1350</span>
               </button>
             </figcaption>
             </figure>
           </article>
           <article class="article">
             <figure class="article__content">
-              <a class="article__content-link" href="#">
+              <a class="article__content-link" href="#" aria-label="фото: Местная растительность">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x">
@@ -110,18 +114,18 @@
             <figcaption class="article__content-caption">
               <h3 class="article__content-title">Местная растительность</h3>
               <cite class="article__content-author" >Автор фото: Сергей</cite>
-              <button class="like" type="button">
-                <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              <button class="like" type="button" aria-label="Поставить лайк">
+                <svg width="23" height="21">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
-                <span class="likes-number">143</span>
+                <span class="like__number">143</span>
               </button>
             </figcaption>
             </figure>
           </article>
           <article class="article">
             <figure class="article__content">
-              <a class="article__content-link" href="#">
+              <a class="article__content-link" href="#" aria-label="фото: Дорога на север">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x">
@@ -135,18 +139,18 @@
             <figcaption class="article__content-caption article__content-caption--darker">
               <h3 class="article__content-title">Дорога на север</h3>
               <cite class="article__content-author" >Автор фото: Петр</cite>
-              <button class="like" type="button">
-                <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              <button class="like" type="button" aria-label="Поставить лайк">
+                <svg width="23" height="21">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
-                <span class="likes-number">96</span>
+                <span class="like__number">96</span>
               </button>
             </figcaption>
             </figure>
           </article>
           <article class="article">
             <figure class="article__content">
-              <a class="article__content-link" href="#">
+              <a class="article__content-link" href="#" aria-label="фото: Мост дьявола">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
@@ -160,11 +164,11 @@
             <figcaption class="article__content-caption">
               <h3 class="article__content-title">Мост дьявола</h3>
               <cite class="article__content-author" >Автор фото: Антон</cite>
-              <button class="like" type="button">
-                <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              <button class="like" type="button" aria-label="Поставить лайк">
+                <svg width="23" height="21">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
-                <span class="likes-number">254</span>
+                <span class="like__number">254</span>
               </button>
             </figcaption>
             </figure>
@@ -179,26 +183,26 @@
           </div>
           <div class="promo__video">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="iimg/video-desktop.webp 1x, img/video-desktop.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet.webp 2x">
               <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="iimg/video-desktop.jpg 1x, img/video-desktop.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet.jpg 2x">
               <img class="promo__video-img" src="img/video-mobile.jpg" srcset="img/video-mobile.jpg 1x, img/video-mobile.jpg 2x" alt="Видео" width="320" height="201">
             </picture>
             <div class="promo__video-controls controls">
-              <button class="controls__button controls__button-replay" type="button">
+              <button class="controls__button controls__button-replay" type="button" aria-label="Воспроизвести заново">
                 <svg width = "16" height="20">
                   <use href="img/sprite.svg#replay"></use>
                 </svg>
               </button>
-              <button class="controls__button controls__button-sub" type="button">
+              <button class="controls__button controls__button-sub" type="button" aria-label="Субтитры">
                 <svg width = "32" height="20">
                   <use href="img/sprite.svg#subtitles"></use>
                 </svg>
               </button>
-              <button class="controls__button controls__button-screen" type="button">
+              <button class="controls__button controls__button-screen" type="button" aria-label="Полноэкранный режим">
                 <svg width = "20" height="20">
                   <use href="img/sprite.svg#fullscreen"></use>
                 </svg>
@@ -211,21 +215,21 @@
         <div class="page-footer__hashtag">#visitsedona</div>
           <ul class="page-footer__social social">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
+              <a class="social__link social__link--twitter" href="#" aria-label="Страница города в Твиттере.">
                 <svg class="social__link-image" width = "18" height = "15" fill = "#ffffff">
                   <use href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
+              <a class="social__link social__link--facebook" href="#" aria-label="Страница города на Фейсбуке.">
                 <svg class="social__link-image" width = "9" height = "19" fill = "#ffffff">
                   <use href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
+              <a class="social__link social__link--youtube" href="#" aria-label="Канал города на ютубе.">
                 <svg class="social__link-image" width = "20" height = "14" fill = "#ffffff">
                   <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
@@ -234,7 +238,7 @@
           </ul>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" area-label="Сайт HTML Academy.">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
             <svg class="copyright__link-image" width = "27" height= "34">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
@@ -242,6 +246,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

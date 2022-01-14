@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 280px;
-  padding: 15px 32px 17px 32px;
+  min-height: 58px;
   background-color: var(--bright);
   font-size: 21px;
   line-height: 26/21*1;
@@ -40,8 +40,18 @@
 .button--error {
   width: 180px;
   font-size: 18px;
+
+  @include tabletsAndDesktop {
+    width: 272px;
+  }
 }
 
 .button--result {
   font-size: 18px;
+
+  @include tabletsAndDesktop {
+    width: 458px;
+    height: 58px;
+    font-size: 21px;
+  }
 }

@@ -1,7 +1,7 @@
 .controls__button {
   display: block;
   border: none;
-  width: 30px;
+  width: 50px;
   height: 25px;
   cursor: pointer;
   background-color: transparent;
@@ -33,21 +33,29 @@
 }
 
 .controls__button-replay {
-  margin-left: 15px;
+  margin-left: 8px;
 
   @include tabletsAndDesktop {
-    margin-left: 35px;
+    margin-left: 18px;
   }
 }
 
 .controls__button-screen {
-  @include tabletsAndDesktop {
-    margin-left: 30px;
+  @include tablets {
+    margin-right: 25px;
+  }
+
+  @include desktop {
+    margin-left: 12px;
   }
 }
 
 .controls__button-sub {
-  @include tabletsAndDesktop {
-    margin-left: 40px;
+  @include tablets {
+    margin-left: 14px;
+  }
+
+  @include desktop {
+    margin-left: 45px;
   }
 }

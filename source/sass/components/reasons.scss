@@ -13,13 +13,14 @@
 }
 
 .reasons__list {
+  counter-reset: list1; /* Инициируем счетчик */
   padding: 0;
   margin-bottom: 33px;
 
   @include tabletsAndDesktop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 }
 
@@ -33,32 +34,51 @@
 }
 
 .reasons__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 45px 20px 25px 18px;
   text-align: center;
 
   @include tabletsAndDesktop {
-    padding: 40px 27px 25px 18px;
+    padding: 35px 27px 25px 18px;
+  }
+}
+
+.reasons__header::before {
+  counter-increment: list1; /* Увеличиваем значение счетчика */
+  content: "-""№" counter(list1) "-"; /* Выводим число */
+  margin-bottom: 12px;
+
+  @include tabletsAndDesktop {
+    margin-bottom: 7px;
   }
 }
 
 .reasons__header--color-blue {
   background-color: var(--main-bg-color);
   color: var(--another-text-color);
+  padding-top: 56px;
+
+  @include tabletsAndDesktop {
+    padding-top: 35px;
+  }
 }
 
 .reasons__header--color-gray {
-  padding: 26px 35px 14px 29px;
+  padding: 23px 35px 14px 29px;
 
   @include tablets {
-    padding: 41px 35px 35px 21px;
+    padding: 43px 35px 35px 21px;
   }
 
   @include desktop {
-    padding: 51px 35px 50px 21px;
+    padding: 36px 35px 50px 21px;
   }
 }
 
 .reasons__title {
+  order: -1;
   font-size: 18px;
   font-weight: bold;
   margin: 0;
@@ -84,12 +104,14 @@
 
   @include tablets {
     padding-right: 10px;
+    padding-top: 6px;
     padding-left: 10px;
   }
 
   @include desktop {
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 10px;
   }
 }
 
@@ -123,6 +145,7 @@
 
   @include desktop {
     width: 800px;
+    height: 256px;
   }
 }
 
@@ -134,6 +157,8 @@
 }
 
 .reasons__header--reverse {
+  padding-top: 38px;
+
   @include tabletsAndDesktop {
     grid-column: -1 / -2;
   }

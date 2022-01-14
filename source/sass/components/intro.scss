@@ -1,19 +1,19 @@
 .intro {
   display: flex;
-  align-items: center;
+  padding-top: 90px;
   justify-content: center;
   background-color: var(--main-bg-color);
-  background-image: url("../img/back.jpg");
+  background-image: image-set(
+    url("../img/back-mobile.webp") 1x,
+    url("../img/back-mobile@2x.webp") 2x,
+    url("../img/back-mobile.jpg") 1x,
+    url("../img/back-mobile@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 32px;
   min-height: 389px;
   position: relative;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@2x.jpg");
-  }
 
   &::after {
     position: absolute;
@@ -30,28 +30,44 @@
 
   @include tabletsAndDesktop {
     min-height: 518px;
+    padding-top: 76px;
+    background-image: image-set(
+      url("../img/back-desktop.webp") 1x,
+      url("../img/back-desktop@2x.webp") 2x,
+      url("../img/back-desktop.jpg") 1x,
+      url("../img/back-desktop@2x.jpg") 2x);
+  }
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop@2x.jpg");
-    }
+  @include tablets {
+    margin-bottom: 40px;
   }
 
   @include desktop {
-    margin-bottom: 46px;
+    margin-bottom: 51px;
   }
 }
 
 .intro--another-height {
+  background-position: bottom;
   min-height: 160px;
+  padding-top: 52px;
 
   @include tablets {
     min-height: 290px;
-    margin-bottom: 47px;
+    margin-bottom: 52px;
+    padding-top: 93px;
   }
 
   @include desktop {
     min-height: 300px;
     margin-bottom: 90px;
+    padding-top: 100px;
+  }
+}
+
+.intro--form {
+  @include desktop {
+    margin-bottom: 101px;
   }
 }
 
