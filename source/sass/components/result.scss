@@ -7,9 +7,10 @@
   width: 320px;
   height: 323px;
   position: fixed;
-  left: 0;
+  left: 50%;
   right: 0;
   top: 117px;
+  transform: translateX(-50%);
 
   @include tabletsAndDesktop {
     width: 640px;

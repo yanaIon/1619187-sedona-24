@@ -7,6 +7,7 @@
 
   @include tabletsAndDesktop {
     width: 83px;
+    height: 30px;
     grid-row: span 2;
     align-self: center;
     justify-self: end;
@@ -22,6 +23,8 @@
   position: absolute;
   left: 0;
   opacity: 0.3;
+  top: 50%;
+  transform: translateY(-63%);
 
   @include desktop {
     opacity: 1;

@@ -99,16 +99,21 @@
   color: var(--form-text-color);
   font-weight: bold;
   background-color: var(--form-bg-color);
-  border: transparent;
+  border: 4px solid var(--form-bg-color);
   outline: none;
 
   &:hover {
     background-color: var(--form-bg-hover-color);
+    border: 4px solid var(--form-bg-hover-color);
   }
 
-  &:active {
+  &:focus {
     background-color: var(--another-text-color);
     border: 4px solid var(--form-bg-hover-color);
+  }
+
+  &::placeholder {
+    color: var(--form-text-color);
   }
 }
 
@@ -327,18 +332,24 @@
   color: var(--form-text-color);
   font-size: 18px;
   font-weight: bold;
-  padding: 18px 23px 29px 21px;
+  padding: 9px 23px 29px 21px;
   background-color: var(--form-bg-color);
-  border: transparent;
+  border: 4px solid var(--form-bg-color);
   outline: none;
   margin-top: 20px;
+  resize: none;
 
   &:hover {
     background-color: var(--form-bg-hover-color);
+    border: 4px solid var(--form-bg-hover-color);
   }
 
-  &:active {
+  &:focus {
     background-color: var(--another-text-color);
     border: 4px solid var(--form-bg-hover-color);
+  }
+
+  &::placeholder {
+    color: var(--form-text-color);
   }
 }

@@ -36,3 +36,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.check__input:focus + .check__box {
+  background-color: var(--form-bg-hover-color);
+}
