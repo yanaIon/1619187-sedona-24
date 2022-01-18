@@ -23,8 +23,8 @@
             <img class="page-header__logo-image" src="img/logo.svg" alt="Седона" width="102" height="84">
           </picture>
         </a>
-        <!-- nav--open, nav--nojs  -->
-        <nav class="nav">
+        <!-- nav--open -->
+        <nav class="nav nav--nojs">
           <!-- nav__toggle--open -->
           <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
             <svg class="nav__icon" aria-hidden="true" width = "23" height="23">
@@ -76,7 +76,7 @@
             <li class="reasons__item reasons__item--full-width">
                 <div class="reasons__header reasons__header--color-blue">
                   <h3 class="reasons__title">Настоящий городок</h3>
-                  <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                  <p class="reasons__description">Седона не аттракцион для туристов, <span>там течет своя жизнь</span></p>
                 </div>
                 <div class="reasons__image">
                   <picture>
@@ -92,15 +92,15 @@
               <ul class="info">
                 <li class="info__item info__item--house">
                   <p class="info__item-title info__item-title--house">Жилье</p>
-                  <p class="info__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <p class="info__item-description info__item-description--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="info__item info__item--gift">
                   <p class="info__item-title info__item-title--gift">Сувениры</p>
-                  <p class="info__item-description">Не только китайского, но и местного производства!</p>
+                  <p class="info__item-description info__item-description--gift">Не только китайского, <span>но и местного производства!</span></p>
                 </li>
                 <li class="info__item info__item--food">
                   <p class="info__item-title info__item-title--food">Еда</p>
-                  <p class="info__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="info__item-description info__item-description--food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
@@ -130,20 +130,20 @@
             <li class="reasons__item reasons__item--color-gray">
               <div class="reasons__header reasons__header--color-gray">
                 <h3 class="reasons__title">Красивая дорога</h3>
-                <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="reasons__description reasons__description--road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="reasons__item reasons__item--color-gray">
               <div class="reasons__header reasons__header--color-gray">
                 <h3 class="reasons__title">Мало туристов</h3>
-                <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
+                <p class="reasons__description reasons__description--tourist">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
           </ol>
         </section>
         <section class="search">
           <h2 class="search__title">Заинтересовались?</h2>
-          <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+          <p class="search__description">Укажите предполагаемые даты поездки, <span>и мы покажем вам лучшие предложения гостиниц в Cедоне</span></p>
           <a class="button" href="#" aria-label="Кнопка поиска гостиницы.">Найти гостиницу</a>
         </section>
         <section class="map">
@@ -192,6 +192,10 @@
         </div>
       </footer>
     </div>
+    <script>
+      const menu = document.querySelector('.nav');
+      menu.classList.remove('nav--nojs');
+    </script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

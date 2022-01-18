@@ -50,7 +50,11 @@
   content: "-""№" counter(list1) "-"; /* Выводим число */
   margin-bottom: 12px;
 
-  @include tabletsAndDesktop {
+  @include tablets {
+    margin-bottom: 4px;
+  }
+
+  @include desktop {
     margin-bottom: 7px;
   }
 }
@@ -60,20 +64,28 @@
   color: var(--another-text-color);
   padding-top: 56px;
 
-  @include tabletsAndDesktop {
-    padding-top: 35px;
+  @include tablets {
+    padding-top: 36px;
+  }
+
+  @include desktop {
+    padding-top: 30px;
   }
 }
 
 .reasons__header--color-gray {
-  padding: 23px 35px 14px 29px;
+  @include mobile {
+    padding: 23px 35px 14px 29px;
+  }
 
   @include tablets {
-    padding: 43px 35px 35px 21px;
+    padding: 43px 36px 30px 21px;
   }
 
   @include desktop {
-    padding: 36px 35px 50px 21px;
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 25px;
   }
 }
 
@@ -86,12 +98,14 @@
 
   @include tablets {
     font-size: 21px;
+    line-height: 26/21*1;
     padding-right: 26px;
     padding-left: 35px;
   }
 
   @include desktop {
     font-size: 21px;
+    line-height: 26/21*1;
     padding-right: 100px;
     padding-left: 105px;
   }
@@ -103,15 +117,48 @@
   padding-bottom: 15px;
 
   @include tablets {
-    padding-right: 10px;
-    padding-top: 6px;
+    padding-right: 1px;
+    padding-top: 17px;
     padding-left: 10px;
   }
 
   @include desktop {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    padding-right: 27px;
+    padding-left: 32px;
+  }
+}
+
+.reasons__description--road {
+  @include tablets {
+    padding-right: 23px;
+    padding-left: 32px;
+  }
+
+  @include desktop {
+    padding-right: 41px;
+    padding-left: 48px;
+  }
+}
+
+.reasons__description--tourist {
+  @include tablets {
+    padding-right: 10px;
+    padding-left: 25px;
+  }
+}
+
+.reasons__description--reverse {
+  @include tablets {
+    padding-right: 4px;
+    padding-left: 14px;
+  }
+
+  @include desktop {
+    padding-right: 62px;
+    padding-left: 79px;
   }
 }
 
@@ -161,5 +208,9 @@
 
   @include tabletsAndDesktop {
     grid-column: -1 / -2;
+  }
+
+  @include tablets {
+    padding-top: 42px;
   }
 }

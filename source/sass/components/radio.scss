@@ -2,7 +2,11 @@
   display: grid;
   grid-template-columns: 48px auto;
   align-items: center;
-  column-gap: 28px;
+  column-gap: 29px;
+
+  @include tabletsAndDesktop {
+    column-gap: 26px;
+  }
 }
 
 .radio__input {
@@ -14,8 +18,8 @@
 }
 
 .radio__box {
-  width: 48px;
-  height: 48px;
+  width: 53px;
+  height: 53px;
   background-color: var(--form-bg-color);
   border-radius: 50%;
 }

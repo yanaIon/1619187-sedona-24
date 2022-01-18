@@ -22,7 +22,9 @@
   }
 
   @include desktop {
-    margin: 58px 48px 83px 45px;
+    margin: 0;
+    margin-top: 53px;
+    margin-bottom: 81px;
   }
 }
 
@@ -49,10 +51,9 @@
   @include tabletsAndDesktop {
     display: grid;
     align-items: start;
-    row-gap: 23px;
+    row-gap: 26px;
     justify-items: center;
     grid-template-rows: 75px 26px auto;
-    padding-right: 60px;
 
     &::before {
       width: 72px;
@@ -62,6 +63,20 @@
 
   @include tablets {
     padding-right: 63px;
+    row-gap: 23px;
+  }
+}
+
+.info__item-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21/14*1;
+  grid-column: 2/-1;
+}
+
+.info__item-description--house {
+  @include desktop {
+    padding: 0 47px;
   }
 }
 
@@ -85,15 +100,11 @@
     height: 37px;
   }
 
-  @include tablets {
-    padding-left: 36px;
-  }
-
   @include tabletsAndDesktop {
     display: grid;
     grid-column: -1/-2;
     align-items: start;
-    row-gap: 23px;
+    row-gap: 27px;
     justify-items: center;
     grid-template-rows: 75px 26px auto;
 
@@ -103,8 +114,19 @@
     }
   }
 
+  @include tablets {
+    padding-left: 36px;
+    row-gap: 23px;
+  }
+}
+
+.info__item-description--gift {
   @include desktop {
-    padding-left: 62px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-left: 83px;
+    padding-right: 85px;
   }
 }
 
@@ -133,24 +155,25 @@
     grid-column: 2/3;
     grid-row: 1/-1;
     align-items: start;
-    row-gap: 23px;
+    row-gap: 25px;
     justify-items: center;
     grid-template-rows: 75px 26px auto;
 
     &::before {
-      width: 68px;
+      width: 76px;
       height: 76px;
     }
   }
 
-  @include desktop {
-    padding-right: 31px;
-    padding-left: 38px;
-  }
-
   @include tablets {
-    padding-right: 37px;
-    padding-left: 25px;
+    padding-right: 45px;
+    padding-left: 30px;
+  }
+}
+
+.info__item-description--food {
+  @include desktop {
+    padding: 0 51px;
   }
 }
 
@@ -162,11 +185,4 @@
   @include tabletsAndDesktop {
     font-size: 21px;
   }
-}
-
-.info__item-description {
-  margin: 0;
-  font-size: 14px;
-  line-height: 21/14*1;
-  grid-column: 2/-1;
 }

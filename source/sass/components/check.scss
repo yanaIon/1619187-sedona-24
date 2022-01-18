@@ -2,7 +2,11 @@
   display: grid;
   grid-template-columns: 51px auto;
   align-items: center;
-  column-gap: 28px;
+  column-gap: 29px;
+
+  @include desktop {
+    column-gap: 32px;
+  }
 }
 
 .check__input {
@@ -14,8 +18,8 @@
 }
 
 .check__box {
-  width: 51px;
-  height: 51px;
+  width: 55px;
+  height: 55px;
   background-color: var(--form-bg-color);
   border-radius: 5px;
 }

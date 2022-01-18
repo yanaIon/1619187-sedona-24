@@ -6,6 +6,11 @@
 
   @include tabletsAndDesktop {
     margin-bottom: 0;
+    padding-right: 35px;
+  }
+
+  @include tablets {
+    padding-right: 32px;
   }
 }
 

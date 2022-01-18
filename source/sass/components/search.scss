@@ -5,12 +5,14 @@
   margin-bottom: 50px;
   text-align: center;
 
-  @include tabletsAndDesktop {
-    width: 435px;
+  @include tablets {
+    margin-bottom: 59px;
+    width: 458px;
   }
 
   @include desktop {
     margin-bottom: 67px;
+    width: 458px;
   }
 }
 
@@ -21,7 +23,7 @@
   margin-bottom: 17px;
 
   @include tablets {
-    margin: 0 0 23px;
+    margin: 0 0 25px;
     font-size: 30px;
   }
 
@@ -40,14 +42,16 @@
   margin-left: 29px;
 
   @include tablets {
-    margin-right: 39px;
-    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     margin-bottom: 38px;
   }
 
   @include desktop {
-    margin-right: 39px;
-    margin-left: 0;
-    margin-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 41px;
   }
 }

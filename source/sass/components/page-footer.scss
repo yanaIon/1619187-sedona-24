@@ -18,7 +18,12 @@
 
   @include tabletsAndDesktop {
     padding-top: 0;
+    padding-right: 32px;
     margin-bottom: 0;
+  }
+
+  @include tablets {
+    padding-left: 16px;
   }
 }
 
@@ -28,5 +33,9 @@
 
   @include tabletsAndDesktop {
     margin-bottom: 0;
+  }
+
+  @include tablets {
+    padding-right: 19px;
   }
 }

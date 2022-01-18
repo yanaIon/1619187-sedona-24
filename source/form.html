@@ -23,8 +23,8 @@
             <img class="page-header__logo-image" src="img/logo.svg" alt="Седона" width="102" height="84">
           </picture>
         </a>
-        <!-- nav--open, nav--nojs  -->
-        <nav class="nav">
+        <!-- nav--open  -->
+        <nav class="nav nav--nojs">
           <!-- nav__toggle--open -->
           <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav__list"><span class="visually-hidden">Открыть меню</span>
             <svg class="nav__icon" aria-hidden="true" width = "23" height="23">
@@ -153,8 +153,10 @@
             </div>
           </section>
           <section class="form__emotions">
-            <h3 class="form__header form__header--withBorder">опишите свои эмоции:</h3>
-            <textarea class="form__emotions-comment" name="comment" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              <h3 class="form__header form__header--withBorder">опишите свои эмоции:</h3>
+              <label aria-label="Опишите свои эмоции">
+                <textarea class="form__emotions-comment" name="comment" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              </label>
           </section>
           <button class="button" type="submit" aria-label="Отправить отзыв">Отправить отзыв</button>
           <p class="form__required">* — обязательные поля</p>
@@ -209,6 +211,10 @@
         </div>
       </footer>
     </div>
+    <script>
+      const menu = document.querySelector('.nav');
+      menu.classList.remove('nav--nojs');
+    </script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
