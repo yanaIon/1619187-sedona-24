@@ -45,6 +45,14 @@
   }
 }
 
+@-moz-document url-prefix("") {
+  .reasons__header {
+    @include tabletsAndDesktop {
+      padding: 35px 26px 25px 18px;
+    }
+  }
+}
+
 .reasons__header::before {
   counter-increment: list1; /* Увеличиваем значение счетчика */
   content: "-""№" counter(list1) "-"; /* Выводим число */
